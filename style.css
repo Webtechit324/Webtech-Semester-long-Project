@@ -1,0 +1,91 @@
+body{
+	background: #333333;
+	font-family: "Abel", sans-serif;
+	font-size:20px;
+	line-height: 1.6em;
+	font-weight:300;
+}
+
+#banner{
+	width: 1000px auto;
+	padding: 80px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #EAEAEA;
+}
+
+#banner h2{
+	display:inline-block;
+	padding: 20px 20px;
+	font-size: 50px;
+	font-family:"Impact";
+	letter-spacing:5px;
+	background: #ff1a1a;
+}
+
+#banner h3{
+	letter-spacing: 2px;
+	font-size:28px;
+	font-weight:400;
+	
+}
+#banner p{
+	display:block;
+	text-align: justify;
+}
+#fullWidth1{
+	background:#ff1a1a;
+	color:#EAEAEA;
+}
+#fullWidth2{
+	background:#black;
+	color:#EAEAEA;
+
+}
+#fullWidth3{
+	background:#ff1a1a;
+	color:#EAEAEA;
+	
+}
+#fullWidth4{
+	background:#black;
+	color:#EAEAEA;
+
+}
+
+#fullWidth5{
+	background:#ff1a1a;
+	color:#EAEAEA;
+	
+}
+#section1{
+	width:1200px;
+	overflow:hidden;
+	margin: 0px auto;
+	padding:30px 30px;
+}
+#section3{
+	width:1200px;
+	overflow:hidden;
+	margin: 0px auto;
+	padding:30px 30px;
+}
+
+#section2{
+	width:1200px;
+	overflow:hidden;
+	margin: 0px auto;
+	padding:30px 30px;
+}
+#section4{
+	width:1200px;
+	overflow:hidden;
+	margin: 0px auto;
+	padding:30px 30px;
+}
+#section5{
+	width:1200px;
+	overflow:hidden;
+	margin: 0px auto;
+	padding:30px 30px;
+}
