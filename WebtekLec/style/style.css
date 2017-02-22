@@ -1,0 +1,245 @@
+* {
+	margin: 0;
+}
+
+body {
+    background-color: paleturquoise;
+	background-size: cover;
+	white-space: nowrap;
+	text-align: center;
+}
+
+#bodyone {
+    background-color: palegoldenrod;
+	background-size: cover;
+	white-space: nowrap;
+	text-align: center;
+}
+
+#bodytwo {
+    background-color: palevioletred;
+	background-size: cover;
+	white-space: nowrap;
+	text-align: center;
+}
+
+#bodythree {
+    background-color: palegreen;
+	background-size: cover;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.container {
+	margin: 20px auto;
+	text-align: center;
+	width: 1000px;
+}
+
+img{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-right: 70px;
+    background-size: auto;
+}
+
+a {
+	text-decoration: none;
+	font-family: Calibri;
+}
+
+header {
+	font-size: 0px;
+}
+
+
+header h1 {
+	text-align: left;
+}
+
+header p {
+	text-align: left;
+	color: white;
+}
+
+header h1 a {
+	font-size: 70px;
+	color: white;
+}
+
+header p {
+	font-family: Calibri;
+	font-size: 25px;
+}
+
+nav {
+	text-align: left;
+	background-color: cadetblue;
+	padding: 20px;
+	clear: both;
+    margin-top: 20px;
+}
+
+#navone {
+	text-align: left;
+	background-color: darkgoldenrod;
+	padding: 20px;
+	clear: both;
+    margin-top: 20px;
+}
+
+#navtwo {
+	text-align: left;
+	background-color: mediumvioletred;
+	padding: 20px;
+	clear: both;
+    margin-top: 20px;
+}
+
+#navthree {
+	text-align: left;
+	background-color: forestgreen;
+	padding: 20px;
+	clear: both;
+    margin-top: 20px;
+}
+
+nav a {
+	color: black;
+	font-size: 30px;
+	padding: 20px;
+    margin-left: 80px;
+}
+
+nav a:hover {
+	color: dodgerblue;
+	background-color: #191919;
+}
+
+#navone a:hover {
+	color: yellow;
+	background-color: #191919;
+}
+
+#navtwo a:hover {
+	color: deeppink;
+	background-color: #191919;
+}
+
+#navthree a:hover {
+	color: lawngreen;
+	background-color: #191919;
+}
+
+main {
+	width: 1000px;
+	white-space: initial;
+}
+
+article {
+	position: relative;
+	float: left;
+    width: 1000px;
+    margin-bottom: 30px;
+}
+
+#index article h2 {
+	color: #e7e5cb;
+	width: 980px;
+	padding: 10px;
+	background-color: #0f0f0a;
+	font-family: Tahoma;
+	text-align: left;
+}
+
+#index article p {
+	margin-top: 0px;
+	color: white;
+	font-size: 30px;
+	font-family: Calibri;
+	margin-left: 0px;
+	width: 1000px;
+    background-color: wheat;
+}
+
+#prelims article h2 {
+	color: #e7e5cb;
+	width: 980px;
+	padding: 10px;
+	background-color: #0f0f0a;
+	font-family: Tahoma;
+	text-align: center;
+}
+
+#prelims article p {
+	margin-top: 0px;
+	color: black;
+	font-size: 30px;
+	font-family: Calibri;
+    text-align: left;
+	width: 1000px;
+    background-color: lavender;
+}
+
+#prelims article h3 {
+	margin-top: 0px;
+	color: black;
+	font-size: 20px;
+	font-family: Times New Roman;
+	margin-left: 0px;
+	width: 1000px;
+    background-color: lightgray;
+}
+
+#midterms article h2 {
+	color: #e7e5cb;
+	width: 980px;
+	padding: 10px;
+	background-color: #0f0f0a;
+	font-family: Tahoma;
+	text-align: left;
+}
+
+#midterms article p {
+	margin-top: 0px;
+	color: indianred;
+	font-size: 30px;
+	font-family: Calibri;
+	margin-left: 0px;
+	width: 1000px;
+    background-color: lightgoldenrodyellow;
+}
+
+#finals article h2 {
+	color: #e7e5cb;
+	width: 980px;
+	padding: 10px;
+	background-color: #0f0f0a;
+	font-family: Tahoma;
+	text-align: left;
+}
+
+#finals article p {
+	margin-top: 0px;
+	color: palegreen;
+	font-size: 30px;
+	font-family: Calibri;
+	margin-left: 0px;
+	width: 1000px;
+    background-color: oldlace;
+}
+
+footer {
+	margin-top: 35px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	position: relative;
+	float: left;
+}
+
+small{
+    font-size: 25px;
+    margin-left: 410px;
+    font-family: arial black;
+}
