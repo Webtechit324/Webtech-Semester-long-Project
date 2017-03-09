@@ -60,21 +60,43 @@
         </article>
         <article>
             <h2>HTTP Request Methods</h2>
-            <p>-GET</p>
-            <p>-HEAD</p>
-            <p>-POST</p>
-            <p>-OPTIONS</p>
-            <p>-TRACE</p>
-            <p>-PUT</p>
-            <p>-DELETE</p>
-            <p>-CONNECT</p>
+            <li>GET</li>
+            <p>Request data from a specified source.</p>
+            <li>HEAD</li>
+            <p>Same as get but returns only HTTP headers and no document body.</p>    
+            <li>POST</li>
+            <p>Submit data to be processed to a specified resources.</p>
+            <li>OPTIONS</li>
+            <p>OPTIONS method represents a request for information about the communication options available on the request/response chain identified by the Request-URI.</p>
+            <li>TRACE</li>
+            <p>TRACE method is used to invoke a remote, application-layer loop- back of the request message..</p>
+            <li>PUT</li>
+            <p>Uploads a representation of the specified URI.</p>
+            <li>DELETE</li>
+            <p>DELETE method requests that the origin server delete the resource identified by the Request-URI.</p>
+            <li>CONNECT</li>
+            <p>Converts the request connection to a transparent TCP/IP tunnel
         </article>
         <article>
             <h2>HTTP Message Headers</h2>
-            <p>-General Header Fields</p>
-            <p>-Entity Header Fields</p>
-            <p>-Request Header Fields</p>
-            <p>-Response Header Fields</p>
+            <p>
+ -				<li>General Header Fields</li>
+ -				<li>Request Header Fields</li>
+ -				<li>Response Header Fields</li>
+ -				<li>Entitty Header Fields</li>
+ -			</p>
+            
+            <li>General Header Fields</li>
+ +			<p>This header fields have general applicability for both request and response messages.</p>
+ +			<li>Request Header Fields</li>
+ +			<p>The request-header fields allow the client to pass additional information about the request, 
+ +			    and about the client itself, to the server. These fields act as request modifiers.</p>
+ +			<li>Response Header Fields</li>
+ +			<p>The response-header fields allow the server to pass additional information about the response which cannot be placed in the Status- Line. 
+ +			   These header fields give information about the server and about further access to the resource identified by the Request-URI.</p>
+ +			<li>Entitty Header Fields</li>
+ +			<p>This header fields define meta information about the entity-body or, if no body is present, 
+ +			   about the resource identified by the request.</p>
         </article>
         <article>
             <h2>HTTP Status Codes</h2>
