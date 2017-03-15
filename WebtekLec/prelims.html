@@ -24,42 +24,57 @@
     <main id="prelims">
         <article>
             <h2>Internet</h2>
-            <p> - a global system of interconnected computer networks that use the standard Internet Protocol Suite (TCP/IP) to serce billions of users worldwide. </p>
-            <p> - It is a networks that consists of millions of private, public, academic, business and government networks, of local to global scope, that are linked by a broad array of electronic, wireless and optical networking technologies.</p>
+            <ul>
+                <li>A global system of interconnected computer networks that use the standard Internet Protocol Suite (TCP/IP) to serce billions of users worldwide. </li>
+                <li> It is a networks that consists of millions of private, public, academic, business and government networks, of local to global scope, that are linked by a broad array of electronic, wireless and optical networking technologies.</li>
+            </ul>
         </article>
         <article>
             <h2>Vinton Cerf</h2>
-            <p> - Father of the Internet
-            </p>
+            <ul>
+                <li>Father of the Internet</li>
+            </ul>
         </article>
         <article>
             <h2>World Wide Web</h2>
-            <p> - A global information medium which users can read and write via computers connected to the Internet. The term is often mistakenly used as a synonym for the Internet itself, but the Web is a service that operates over the Internet, as electronic mail (e-mail) does.
-            </p>
+            <ul>
+                <li>A global information medium which users can read and write via computers connected to the Internet. The term is often mistakenly used as a synonym for the Internet itself, but the Web is a service that operates over the Internet, as electronic mail (e-mail) does.
+                </li>
+            </ul>
         </article>
         <article>
             <h2>Tim Berners-Lee</h2>
-            <p> - Father of the Web</p>
-            <p> - In September 1994, Tim Berners-Lee founded the World Wide Web Consortium (W3C) at the Massachusetts Institute of Technology with support from the Defense Advanced Research Projects Agency (DARPA) and the European Commision. It comprised various comapanies that were willing to create standards and recommendatiopns to improve the quality of the Web. </p>
+            <ul>
+                <li>Father of the Web</li>
+                <li>In September 1994, Tim Berners-Lee founded the World Wide Web Consortium (W3C) at the Massachusetts Institute of Technology with support from the Defense Advanced Research Projects Agency (DARPA) and the European Commision. It comprised various comapanies that were willing to create standards and recommendatiopns to improve the quality of the Web. </li>
+            </ul>
+
         </article>
         <article>
             <h2>Hyper Text Transfer Protocol (HTTP) hypermedia</h2>
-            <p> - application layer used primarily to retrieve hypertext (on hypermedia) documents and reources on the World Wide Web.</p>
-            <p> - jointly developed by the W3C and the IETF.</p>
+            <ul>
+                <li>Application layer used primarily to retrieve hypertext (on hypermedia) documents and reources on the World Wide Web.</li>
+                <li>jointly developed by the W3C and the IETF.</li>
+            </ul>
         </article>
         <article>
             <h2> Protocol</h2>
-            <p> - set of rules need to be followed.</p>
+            <ul>
+                <li>set of rules need to be followed.</li>
+            </ul>
         </article>
         <article>
             <h2>HTTP Response Message</h2>
-            <p> -Status Line</p>
-            <p> -Response Headers</p>
-            <p> -Empty Line</p>
-            <p> -Message Body</p>
+            <ul>
+                <li>Status Line</li>
+                <li>Response Headers</li>
+                <li>Empty Line</li>
+                <li>Message Body</li>
+            </ul>
         </article>
         <article>
             <h2>HTTP Request Methods</h2>
+            <ul>
             <li>GET</li>
             <p>Request data from a specified source.</p>
             <li>HEAD</li>
@@ -76,35 +91,50 @@
             <p>DELETE method requests that the origin server delete the resource identified by the Request-URI.</p>
             <li>CONNECT</li>
             <p>Converts the request connection to a transparent TCP/IP tunnel
+            </p>
+            </ul>
         </article>
         <article>
             <h2>HTTP Message Headers</h2>
-            <p>
- -				<li>General Header Fields</li>
- -				<li>Request Header Fields</li>
- -				<li>Response Header Fields</li>
- -				<li>Entitty Header Fields</li>
- -			</p>
-            
-            <li>General Header Fields</li>
- +			<p>This header fields have general applicability for both request and response messages.</p>
- +			<li>Request Header Fields</li>
- +			<p>The request-header fields allow the client to pass additional information about the request, 
- +			    and about the client itself, to the server. These fields act as request modifiers.</p>
- +			<li>Response Header Fields</li>
- +			<p>The response-header fields allow the server to pass additional information about the response which cannot be placed in the Status- Line. 
- +			   These header fields give information about the server and about further access to the resource identified by the Request-URI.</p>
- +			<li>Entitty Header Fields</li>
- +			<p>This header fields define meta information about the entity-body or, if no body is present, 
- +			   about the resource identified by the request.</p>
+            <ul>
+ 				<li>General Header Fields</li>
+                    <p>This header fields have general applicability for both request and response messages.</p>
+ 				<li>Request Header Fields</li>
+                    <p>The request-header fields allow the client to pass additional information about the request, 
+                and about the client itself, to the server. These fields act as request modifiers.</p>
+ 				<li>Response Header Fields</li>
+                    <p>The response-header fields allow the server to pass additional information about the response which cannot be placed in the Status- Line. These header fields give information about the server and about further access to the resource identified by the Request-URI.</p>
+ 				<li>Entitty Header Fields</li>
+                    <p>This header fields define meta information about the entity-body or, if no body is present, 
+                    about the resource identified by the request.</p>
+ 			</ul> 			
+ 			
         </article>
         <article>
             <h2>HTTP Status Codes</h2>
-            <p>-Informational(1XX)</p>
-            <p>-Success(2XX)</p>
-            <p>-Redirection(3XX)</p>
-            <p>-Client Error(4XX)</p>
-            <p>-Server Error(5XX)</p>
+            <ul>
+                <li>Informational(1xx)</li>
+                    <p>100 Continue</p>
+                    <p>101 Switching Protocols</p>
+                <li>Success(2xx)</li>
+                    <p>200 OK</p>
+                    <p>202 Accepted</p>
+                    <p>203 Non-Authoritative Information</p>
+                    <p>204 No Content</p>
+                    <p>205 Reset Content</p>
+                    <p>206 Partial Content</p>
+                <li>Redirection(3xx)</li>
+                    <p>300 Multiple Choices</p>
+                    <p>301 Moved Permanently</p>
+                    <p>302 Found</p>
+                    <p>303 See Other</p>
+                    <p>304 Not Modified</p>
+                    <p>305 Use Proxy</p>
+                    <p>306 Switch Proxy</p>
+                    <p>307 Temporary Redirect</p>
+                <li>Client Error(4xx)</li>
+                <li>Server Error(5xx)</li>
+            </ul>
         </article>
     </main>
     <footer>

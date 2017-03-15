@@ -64,8 +64,7 @@ header p {
 }
 
 header h1 a {
-	font-size: 60px;
-    text-align: center;
+	font-size: 70px;
 	color: white;
 }
 
@@ -167,26 +166,96 @@ article {
 	width: 1000px;
     background-color: wheat;
 }
+#index article li {
+	margin-top: 0px;
+	color: white;
+	font-size: 20px;
+	font-family: Calibri;
+	margin-left: 0px;
+	width: 1000px;
+    background-color: wheat;
+}
+
 
 #index img{
     width: 200px;
     height: 200px;
-    margin-top: auto;
 }
 
-#Chalk{
-    margin-top: 10px;
+.members{
+	margin-top: 30px;
     font-size: 30px;
     background-color: beige;
     margin-bottom: 50px;
-    white-space: pre-line;
+
 }
 
-#Chalk a{
+.members a{
+	margin-left: 70px;
+    margin-right: 70px;
+    font-size: 15px;
+}
+
+#Christian{
+    margin-top: 30px;
+    font-size: 30px;
+    background-color: beige;
+    margin-bottom: 50px;
+}
+
+#Christian a{
     margin-left: 70px;
     margin-right: 70px;
     font-size: 15px;
-    white-space: pre-line;
+}
+
+#Heinrich{
+    margin-top: 10px;
+    font-size: 30px;
+    background-color: beige;
+}
+
+#Heinrich a{
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 15px;  
+}
+
+#Amariz{
+    margin-top: 70px;
+    font-size: 30px;
+    background-color: beige;
+}
+
+#Amariz a{
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 15px;  
+}
+
+#Lovelace{
+    margin-top: 70px;
+    font-size: 30px;
+    background-color: beige;
+}
+
+#Lovelace a{
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 15px;  
+}
+
+#Kenneth{
+    margin-top: 70px;
+    font-size: 30px;
+    background-color: beige;
+}
+
+
+#Kenneth a{
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: 15px;  
 }
 
 #prelims article h2 {
@@ -201,13 +270,22 @@ article {
 #prelims article p {
 	margin-top: 0px;
 	color: black;
-	font-size: 30px;
+	font-size: 20px;
 	font-family: Calibri;
     text-align: left;
-	width: 1000px;
     background-color: lavender;
 }
 
+#prelims article ul {
+	margin-top: 0px;
+	color: black;
+	font-size: 30px;
+	font-family: Calibri;
+    text-align: left;
+    background-color: lavender;
+}
+
+}
 #prelims article h3 {
 	margin-top: 0px;
 	color: black;
