@@ -64,7 +64,8 @@ header p {
 }
 
 header h1 a {
-	font-size: 70px;
+	font-size: 60px;
+    text-align: center;
 	color: white;
 }
 
@@ -170,67 +171,22 @@ article {
 #index img{
     width: 200px;
     height: 200px;
+    margin-top: auto;
 }
 
-#Christian{
-    margin-top: 30px;
+#Chalk{
+    margin-top: 10px;
     font-size: 30px;
     background-color: beige;
     margin-bottom: 50px;
+    white-space: pre-line;
 }
 
-#Christian a{
+#Chalk a{
     margin-left: 70px;
     margin-right: 70px;
     font-size: 15px;
-}
-
-#Heinrich{
-    margin-top: 10px;
-    font-size: 30px;
-    background-color: beige;
-}
-
-#Heinrich a{
-    margin-left: 70px;
-    margin-right: 70px;
-    font-size: 15px;  
-}
-
-#Amariz{
-    margin-top: 10px;
-    font-size: 30px;
-    background-color: beige;
-}
-
-#Amariz a{
-    margin-left: 70px;
-    margin-right: 70px;
-    font-size: 15px;  
-}
-
-#Lovelace{
-    margin-top: 10px;
-    font-size: 30px;
-    background-color: beige;
-}
-
-#Lovelace a{
-    margin-left: 70px;
-    margin-right: 70px;
-    font-size: 15px;  
-}
-
-#Kenneth{
-    margin-top: 10px;
-    font-size: 30px;
-    background-color: beige;
-}
-
-#Kenneth a{
-    margin-left: 70px;
-    margin-right: 70px;
-    font-size: 15px;  
+    white-space: pre-line;
 }
 
 #prelims article h2 {
