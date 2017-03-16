@@ -46,7 +46,7 @@ img{
 
 a {
 	text-decoration: none;
-	font-family: Calibri;
+	font-family:monospace;
 }
 
 header {
@@ -159,13 +159,16 @@ article {
 
 #index article p {
 	margin-top: 0px;
-	color: white;
-	font-size: 20px;
-	font-family: Calibri;
+	color: black;
+	font-size: 25px;
+	font-family: sans-serif;
 	margin-left: 0px;
 	width: 1000px;
     background-color: wheat;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
+
 #index article li {
 	margin-top: 0px;
 	color: white;
@@ -184,78 +187,18 @@ article {
 
 .members{
 	margin-top: 30px;
-    font-size: 30px;
+    font-size: 40px;
     background-color: beige;
     margin-bottom: 50px;
+    font-family: fantasy;
+    color:darkslategrey;
 
 }
 
 .members a{
 	margin-left: 70px;
     margin-right: 70px;
-    font-size: 15px;
-}
-
-#Christian{
-    margin-top: 30px;
-    font-size: 30px;
-    background-color: beige;
-    margin-bottom: 50px;
-}
-
-#Christian a{
-    margin-left: 70px;
-    margin-right: 70px;
-    font-size: 15px;
-}
-
-#Heinrich{
-    margin-top: 10px;
-    font-size: 30px;
-    background-color: beige;
-}
-
-#Heinrich a{
-    margin-left: 70px;
-    margin-right: 70px;
-    font-size: 15px;  
-}
-
-#Amariz{
-    margin-top: 70px;
-    font-size: 30px;
-    background-color: beige;
-}
-
-#Amariz a{
-    margin-left: 70px;
-    margin-right: 70px;
-    font-size: 15px;  
-}
-
-#Lovelace{
-    margin-top: 70px;
-    font-size: 30px;
-    background-color: beige;
-}
-
-#Lovelace a{
-    margin-left: 70px;
-    margin-right: 70px;
-    font-size: 15px;  
-}
-
-#Kenneth{
-    margin-top: 70px;
-    font-size: 30px;
-    background-color: beige;
-}
-
-
-#Kenneth a{
-    margin-left: 70px;
-    margin-right: 70px;
-    font-size: 15px;  
+    font-size: 20px;
 }
 
 #prelims article h2 {
@@ -265,35 +208,29 @@ article {
 	background-color: #0f0f0a;
 	font-family: Tahoma;
 	text-align: center;
-}
-
-#prelims article p {
-	margin-top: 0px;
-	color: black;
-	font-size: 20px;
-	font-family: Calibri;
-    text-align: left;
-    background-color: lavender;
+    font-size: 30px;
 }
 
 #prelims article ul {
 	margin-top: 0px;
-	color: black;
+	color: brown;
 	font-size: 30px;
 	font-family: Calibri;
-    text-align: left;
+    text-align: center;
     background-color: lavender;
 }
 
+#prelims article li {
+    padding-top: 20px;
+    color: saddlebrown;
+    text-align: left;
+    font-size: 25px;
 }
-#prelims article h3 {
-	margin-top: 0px;
-	color: black;
-	font-size: 20px;
-	font-family: Times New Roman;
-	margin-left: 0px;
-	width: 1000px;
-    background-color: lightgray;
+#prelims article p {
+    padding-top: 10px;
+    color: brown;
+    text-align: left;
+    font-size: 25px;
 }
 
 #midterms article h2 {
@@ -343,7 +280,7 @@ footer {
 }
 
 small{
-    font-size: 25px;
-    margin-left: 410px;
+    font-size: 20px;
+    margin-left: 400px;
     font-family: arial black;
 }
