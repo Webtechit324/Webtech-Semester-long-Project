@@ -17,7 +17,7 @@ body {
 }
 
 #bodytwo {
-    background-color: palevioletred;
+    background-color: #0059b3;
 	background-size: cover;
 	white-space: nowrap;
 	text-align: center;
@@ -95,7 +95,7 @@ nav {
 
 #navtwo {
 	text-align: left;
-	background-color: mediumvioletred;
+	background-color: #00264d;
 	padding: 20px;
 	clear: both;
     margin-top: 20px;
@@ -127,7 +127,7 @@ nav a:hover {
 }
 
 #navtwo a:hover {
-	color: deeppink;
+	color: #004080;
 	background-color: #191919;
 }
 
