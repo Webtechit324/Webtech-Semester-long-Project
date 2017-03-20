@@ -39,17 +39,18 @@
         </article>
         <article>
             <h2>History of Internet</h2>
-            <ul> October 24 1995
-                <li>Internet means a global information system that is logically linked together by a globally unique address space based on the internet protocol (IP). </li>
-                <li> Transmission Control Protocol (TCP) means sending information over the internet and this provides high level services publicly or privately. This also is a platform that create higher level services for users. </li>
+            <ul> 
+                <li>October 24 1995</li>
+                <p>Internet means a global information system that is logically linked together by a globally unique address space based on the internet protocol (IP). </p>
+                <p> Transmission Control Protocol (TCP) means sending information over the internet and this provides high level services publicly or privately. This also is a platform that create higher level services for users. </p>
             </ul>
-            <hr>
-            <ul> 1969 (established)
-                <li>Four computers (that talks to one another) connected to the Advance Research Project Agency Network (ARPANET) by Defense Advanced Research Projects Agency (DARPA). </li>
+            <ul> 
+                <li>1969 (established)</li>
+                <p>Four computers (that talks to one another) connected to the Advance Research Project Agency Network (ARPANET) by Defense Advanced Research Projects Agency (DARPA). </p>
             </ul>
-            <hr>
-            <ul> 1972
-                <li>Electronic mail (e-mail) - the first killer application was deploy on the web. </li>
+            <ul> 
+                <li>1972</li>
+                <p>Electronic mail (e-mail) - the first killer application was deploy on the web. </p>
             </ul>
         </article>
         <article>
@@ -70,23 +71,56 @@
         <article>
             <h2>Wide Area Information Servers (WAIS)</h2>
             <ul>
-                <li> periodically queries databases and get the result and prints what you needed.
+                <li>Periodically queries databases and get the result and prints what you needed.
                 </li>
             </ul>
         </article>
         <article>
-            <h2>Hyper Text Transfer Protocol (HTTP) hypermedia</h2>
+            <h2>Hyper Text Transfer Protocol (HTTP)</h2>
             <ul>
                 <li>Application layer used primarily to retrieve hypertext (on hypermedia) documents and reources on the World Wide Web.</li>
-                <li>jointly developed by the W3C and the IETF.</li>
+                <li>Jointly developed by the W3C and the IETF.</li>
             </ul>
-            <hr>
-             <ul> Version History
-                <li>HTTP 0.9 (1991) </li>
-                <li>Phases: Connection -> Request -> Response -> Disconnection (4 steps)</li>
-                <li>HTTP 1.0 (Request For Comments (RFC) 1945, May 1996) </li>
-                <li>HTTP 1.1 (RFC 2068, Jan 1997) (RFC 2616, Jun 1999) (RFC 7230-7235, Jun 2014) </li>
-                <li> HTTP 2.0 (RFC 7540, May 2015) </li>
+             <ul> 
+                 <li>Version History</li>
+                <p>HTTP 0.9 (1991) </p>
+                <p>Phases: Connection -> Request -> Response -> Disconnection (4 steps)</p>
+                <p>HTTP 1.0 (Request For Comments (RFC) 1945, May 1996) </p>
+                <p>HTTP 1.1 (RFC 2068, Jan 1997) (RFC 2616, Jun 1999) (RFC 7230-7235, Jun 2014) </p>
+                <p> HTTP 2.0 (RFC 7540, May 2015) </p>
+            </ul>
+        </article>
+        <article>
+            <h2>Hyper Text Transfer Protocol (HTTP) unsecure</h2>
+            <ul>
+                <li>Based on a client-server architecture.</li>
+            </ul>
+             <ul> 
+                 <li>Client, aka User Agents (UA)</li>
+                 <p>Web Browser, Web Crawlers/Spiders, Other End USer Tools and Applications</p>
+            </ul>
+            <ul> 
+                <li>Server</li>
+                 <p> Origin Server, Proxy Server (ex. Authentication Server), Gateways, Tunnels</p>
+            </ul>
+        </article>
+         <article>
+            <h2> HTTP Resource Addressing</h2>
+            <ul>
+                <li>Identifies using Uniform Resource Identifer (URI; RFC 3986) or more specifically, HTTP URIs.</li>
+                <li>2 Subtypes of URI:</li>
+                 <p> Uniform Resource Name (URN) - ex. International Standard Book Number (ISBN), Universal Product Code (UPC)</p>
+                 <p> Uniform Resource Locator (URL) - ex. google.com</p>
+            </ul>
+             <ul>
+                <li>Authority</li>
+                 <p> User information/authentication credentials (deprecated).</p>
+                 <p> Host - domain name (resolved to an ip address using dns) of the server where the resource resides (or will be created).</p>
+                 <p> Port Number</p>
+            </ul>
+            <ul>
+                <li> Path to Resource (resolved relative to the document root on the server)</li>
+                <p> Fragment Identifier - starts with a hashtag (#).</p>
             </ul>
         </article>
         <article>
@@ -130,6 +164,12 @@
             <li>CONNECT</li>
             <p>Converts the request connection to a transparent TCP/IP tunnel
             </p>
+            <li> Safe Methods: </li>
+            <p>Get, Head, Options, Trace</p>
+            <li> Not Safe Methods: </li>
+            <p>Post, Put, Delete</p>
+            <li> Idempotent: </li>
+            <p>Get, Head, Put, Delete, Options, Trace</p>
             </ul>
         </article>
         <article>
@@ -137,49 +177,60 @@
             <ul>
  				<li>General Header Fields</li>
                     <p>This header fields have general applicability for both request and response messages.</p>
-                    <p> - connection</p>
-                    <p> - data</p>
-                    <p> - pragma</p>
-                    <p> - transfer encoding</p>
-                    <p> - trailer</p>
-                    <p> - upgrade</p>
-                    <p> - via</p>
-                    <p> - warning</p>
+                    <p> - Connection</p>
+                    <p> - Data</p>
+                    <p> - Pragma</p>
+                    <p> - Transfer encoding</p>
+                    <p> - Trailer</p>
+                    <p> - Upgrade</p>
+                    <p> - Via</p>
+                    <p> - Warning</p>
  				<li>Request Header Fields</li>
                     <p>The request-header fields allow the client to pass additional information about the request, and about the client itself, to the server. These fields act as request modifiers.</p>
-                    <p> - accept language</p>
-                    <p> - accept encoding</p>
-                    <p> - authorization</p>
-                    <p> - proxy</p>
-                    <p> - expect</p>
-                    <p> - from</p>
-                    <p> - host</p>
+                    <p> - Accept language</p>
+                    <p> - Accept encoding</p>
+                    <p> - Authorization</p>
+                    <p> - Proxy</p>
+                    <p> - Expect</p>
+                    <p> - From</p>
+                    <p> - Host</p>
  				<li>Response Header Fields</li>
                     <p>The response-header fields allow the server to pass additional information about the response which cannot be placed in the Status- Line. These header fields give information about the server and about further access to the resource identified by the Request-URI.</p>
-                    <p> - accept - range</p>
-                    <p> - age</p>
+                    <p> - Accept - range</p>
+                    <p> - Age</p>
                     <p> - ETag</p>
                     <p> - Location</p>
                     <p> - Proxy - authenticate</p>
                     <p> - WWW - authenticate</p>
-                    <p> - retry - after</p>
-                    <p> - server</p>
-                    <p> - vary</p>
- 				<li>Entitty Header Fields</li>
+                    <p> - Retry - after</p>
+                    <p> - Server</p>
+                    <p> - Vary</p>
+ 				<li>Entity Header Fields</li>
                     <p>This header fields define meta information about the entity-body or, if no body is present, 
                     about the resource identified by the request.</p>
-                    <p> - allow</p>
-                    <p> - content - encoding</p>
-                    <p> - content - language</p>
-                    <p> - content - length</p>
-                    <p> - content - location</p>
-                    <p> - content - MDS</p>
-                    <p> - content - range</p>
-                    <p> - content - type</p>
-                    <p> - expires</p>
-                    <p> - last - modified</p>
- 			</ul> 			
- 			
+                    <p> - Allow</p>
+                    <p> - Content - encoding</p>
+                    <p> - Content - language</p>
+                    <p> - Content - length</p>
+                    <p> - Content - location</p>
+                    <p> - Content - MDS</p>
+                    <p> - Content - range</p>
+                    <p> - Content - type</p>
+                    <p> - Expires</p>
+                    <p> - Last - modified</p>
+ 			</ul> 
+            <ul>
+                <li> Conditional Header</li>
+                    <p> - Request - if-non-match</p>
+                    <p> - Condition - if-modified.since</p>
+                    <p> - If - ranges</p>
+                    <p> - Max - forward</p>
+                    <p> - Trailer encoding</p>
+                    <p> - User - agent</p>
+                <li> Extended Headers</li>
+                    <p> - Upgrade</p>
+                    <p> - Do not track (DNT)</p>
+            </ul>
         </article>
         <article>
             <h2>HTTP Status Codes</h2>
