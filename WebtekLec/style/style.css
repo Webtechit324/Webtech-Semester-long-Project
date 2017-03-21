@@ -3,28 +3,28 @@
 }
 
 body {
-    background-color: paleturquoise;
+	background:url(../img/background.jpg) no-repeat center center fixed #B6B6B4;
 	background-size: cover;
 	white-space: nowrap;
 	text-align: center;
 }
 
 #bodyone {
-    background-color: palegoldenrod;
+	background:url(../img/background.jpg) no-repeat center center fixed #B6B6B4;
 	background-size: cover;
 	white-space: nowrap;
 	text-align: center;
 }
 
 #bodytwo {
-    background-color: #0059b3;
+	background:url(../img/background.jpg) no-repeat center center fixed #B6B6B4;
 	background-size: cover;
 	white-space: nowrap;
 	text-align: center;
 }
 
 #bodythree {
-    background-color: palegreen;
+	background:url(../img/background.jpg) no-repeat center center fixed #B6B6B4;
 	background-size: cover;
 	white-space: nowrap;
 	text-align: center;
@@ -38,7 +38,7 @@ body {
 
 img{
     float: left;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 20px;
     padding-right: 70px;
     background-size: auto;
@@ -80,6 +80,7 @@ header p {
 nav {
 	text-align: left;
 	background-color: cadetblue;
+    border-radius: 20px;
 	padding: 20px;
 	clear: both;
     margin-top: 20px;
@@ -192,6 +193,8 @@ article {
     margin-bottom: 50px;
     font-family: fantasy;
     color:darkslategrey;
+    white-space: pre-line;
+    
 
 }
 
@@ -283,4 +286,20 @@ small{
     font-size: 20px;
     margin-left: 400px;
     font-family: arial black;
+}
+
+.icons li {
+	line-height: 10px;
+}
+.icons a {
+	color: #000;
+	text-decoration: none;
+}
+.icons a:hover {
+	color: #ab0000
+}
+.icons img {
+	float: left;
+	margin-right: 14px;
+	margin-top: 7px
 }
