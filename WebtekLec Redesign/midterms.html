@@ -259,16 +259,6 @@ click </span>
             </p>
         </article>
         <article>
-            <h2>This is a sample Reviewer for Web Systems and Technology</h2>
-            <p> This is to provide you more information about webtek.
-            </p>
-        </article>
-        <article>
-            <h2>This is a sample Reviewer for Web Systems and Technology</h2>
-            <p> This is to provide you more information about webtek.
-            </p>
-        </article>
-        <article>
             <h2>Asynchronous JavaScript and XML (AJAX)</h2>
             <p> Synchronous Request <br>
 			<li>Recommended for few small requests. JavaScript will not continue to execute, until the server response is ready. If the server is busy or slow, the application will hang or stop.
@@ -294,6 +284,22 @@ click </span>
 		}<br>
 			xhr.send(“productID=1234&catID=5678”);<br>
 			</p>
+	            <p>Cross-Browser and Old Browser Support</p>
+				var xhr;<br>
+				if(typeof XMLHttpRequest != “undefined”){<br>
+				xhr = new XMLHttpRequest();<br>
+				}else if (window.ActiveXObject){<br>
+				var activeXIDs = [“MSXML2.XmlHttp.5.0”,<br>
+				“MSXML2.XmlHttp.4.0”,<br>
+				“MSXML2.XmlHttp.3.0”,<br>
+				“MSXML2.XmlHttp”,<br>
+				“Microsoft.XmlHttp”];<br>
+				for(var i=0; i<activeXIDs.length;i++){<br>
+				try{<br>
+				xhr = new ActiveXObject(activeXIDs[i]);<br>
+				}catch(e){}<br>
+				}<br>
+				}<br>
         </article>
         <article>
             <h2>This is a sample Reviewer for Web Systems and Technology</h2>
