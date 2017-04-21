@@ -58,147 +58,187 @@
                 <li>Body</li>
             </ul>
         </article>
-         <article>
-            <h2>CSS(Cascading Style Sheet)</h2>
-             <ul>
-                     <li>- structural markup documents</li>
-                     <li>- language used to specify the presentation aspects (eg layout and formatting) of
-structurally marked up documents</li>
-                     <li>- developed by Hakon Wium Lie (CHSS: html cascading style sheet) and Bert Bos
-(SSP: stream-based style sheet proposal)</li>
-                 <h3>versions:</h3>
-                 <ul>
-                    <li>- monolife – everything is covered in the specs</li>
-                    <li> - CSS1 – December 17 1996 revised April 11 2008</li>
-                    <li>- CSS 2.1 – June 07 2011</li>
-                     <li>- CSS3 – recommended; individual document defining each module</li>
-                     <li>- CSS Preprocessors, CSS Frameworks (eg $color: red -> body{color=$color;})</li>
-                     <li>- SASS (better ways for CSS), LESS, 960 Grid System, Bootstrap,Foundation, Materialize 
-                         (formatting for tabs, tables), etc.</li>
-                     <li>- material design: concept introduce by Google</li>
-                <ul>
-                    <h3>- CSS Statements</h3>
-                    <li>- At – Rules</li>
-                    <li>- @charset</li>
-                    <li>- @namespace</li>
-                    <li>- @import</li>
-                    <li>- @document – specific page or with given url or domain</li>
-                    <li>- @fontface – downloadable files</li>
-                    <li>- @keyframe – animation</li>
-                    <li>- @media – responsive design</li>
-                    <li>- @page</li>
-                    <h3>- CSS Rule Sets (aka CSS Rules, Style Rules)</h3>
-                    <li>- selector followed by brace-enclosed declaration block p (selector){ - target particular element
-                     color: #f0o;}
-                        /* ---- */ - block comment 
-                        // - make it invalid/ improper comment
-                    </li>
-                    <h3>- CSS Selector</h3>
-                    <li>- Selector</li>
-<li>- elements in the document tree are matched</li>
-<li>- body ail# x>p-y[title] + span: +-before</li>
-<li>- condition in a CSS rule</li>
-<li>- match elements called the subject of the selector</li>
-<li>- Selector syntax</li>
-<li>- one or more sequences of simple selector</li>
-<li>- ex. body(simple) p.xyz (selector sequence) + h1[title]::before (pseudo
-element)</li>
-<li>- sequence of simple selectors</li>
-<li>- chain of simple selector not separated by</li>
-<li>- ex. h1, h2, h3 – group of selector</li>
-<li>- simple selectors</li>
-<li>- type selector – name of elements in html</li>
-<li>- universal selector – represented by *; target everything</li>
-<li>- attribute selector – eg p[title] class = ‘x y’</li>
-<li>- [attr]</li>
-<li>- [attr = value] – specific value</li>
-<li>- [attr ~= value] – one value out of set of several values</li>
-<li>- [attr |= value] – language attribute; value = *something*</li>
-<li>- [attr ^= value] – and</li>
-<li>- [attr $= value] – dollar</li>
-<li>- [attr *= value] – anywhere</li>
-<li>- class selector – eg class = ‘x y’ -> p.x</li>
-<li>- id selector – eg id = ‘id’ -> #id</li>
-<li>- pseudo-class</li>
-<li>- dynamic pseudo-class</li>
-<li>- link pseudo-classes</li>
-<li>-:link</li>
-<li>-:visited</li>
-<li>- user action pseudo-class</li>
-<li>-:hover</li>
-<li>-:active</li>
-<li>-:focus (tab key)</li>
-<li>- target pseudo-class</li>
-<li>-:target eg _#x (url)</li>
-<li>a href = ‘#t1’ – internal link</li>
-<li>p:target{</li>
-display: none || block;</li>
-}
-<li>- language pseudo class</li>
-<li>-:lang()</li>
-<li>- UI element states pseudo class</li>
-<li>-:enabled</li>
-<li>-:disabled</li>
-<li>-:checked</li>
-<li>-:indeterminate</li>
-<li>- structural pseudo-classes</li>
-<li>-:root</li>
-<li>-:first-child (children)</li>
-<li>-:last-child (children)</li>
-<li>-:only-child (children)</li>
-<li>-:nth-child(n)</li>
-<li>-:nth-last-child()</li>
-<li>-:first-of-type</li>
-<li>-:last-of-type</li>
-<li>-:only-of-type</li>
-<li>-:nth-of-type()</li>
-<li>-:nth-last-of-type()</li>
-<li>-:empty (eg u1:empty{width:100px height:100px}</li>
-<li>- negation pseudo-class</li>
-<li>-:not() – (eg body:not(h1){ - type selector/simple selector
-color: blue;
-}</li>
-<li>- combinators</li>
-<li>- descendant combinatory</li>
-<li>- whitespace – space, tab, linefeed, carriage, return,
-form feed (eg body p{ //paragraph descendant of body</li>
-<li>- child combinatory (eg body > p { //levels below</li>
-<li>- sibling combinatory</li>
-<li>- adjacent sibling combinator (+)</li>
-(eg h1+p //immediate follows
-<li>- general sibling combinatory (~)</li>
-(eg h1~p //paragraph follows h1
-<li>- pseudo elements – format just part of it</li>
-<li>- ::first-letter, :first-letter</li>
-(eg h1::first-letter{font size: 2em;}
-<li>- ::first-line, :first-line</li>
-<li>- ::before, :before – introduce content before
-(eg h1::before{content:”topic”;}</li>
-<li>- ::after, :after – introduce content after element</li>
-<li>- cascading – all elements gets combined</li>
-<li>- CSS Rule Precedence</li>
-<li>- by origin and importance</li>
-<li>- user agent important declarations</li>
-<li>- user important declarations - override the author</li>
-<li>- author important declarations</li>
-<li>- author normal declarations</li>
-<li>- user normal declarations</li>
-<li>- user agent normal declarations – (eg color: red; important;)</li>
-<li>- transition declarations – change the value of the property from one to
-another</li>
-<li>- import override declaration – use javascript to import</li>
-<li>- animation declarations</li>
-<li>- by specificity - the name specific the higher the importance</li>
-<li>- inline style – put it on the element itself</li>
-<li>- number of ID selectors</li>
-(eg id = x => div # x > p# y (important)</li>
-<p id = y #x>p (lesser important)</li>
-<li>- number of class selectors, attribute selectors and pseudo-classes</li>
-<li>- number of type selectors (p, h1) and pseudo-elements (before, after)
-(eg body p (more specific) ; p (lesser)</li>
-<li>- by order</li>
-<li>- CSS Declarations</li>
-<li>- properties</li>
+         
+	<article>
+           <h2>CSS(Cascading Style Sheet)</h2>
+           <ul>
+             <li>- structural markup documents</li>
+             <li>- language used to specify the presentation aspects (eg layout and formatting) of structurally marked up documents</li>
+             <li>- developed by Hakon Wium Lie (CHSS: html cascading style sheet) and Bert Bos (SSP: stream-based style sheet proposal)</li>
+             <li>versions:</li>
+             	<ul>
+               	  <li>- monolife – everything is covered in the specs</li>
+			<ul>
+                  		<li> - CSS1 – December 17 1996 revised April 11 2008</li>
+                  		<li>- CSS 2.1 – June 07 2011</li>
+			</ul>
+                  <li>- CSS3 – recommended; individual document defining each module</li>
+                  <li>- CSS Preprocessors, CSS Frameworks (eg $color: red -> body{color=$color;})</li>
+			<ul>
+                     		<li>- SASS (better ways for CSS), LESS, 960 Grid System, Bootstrap,Foundation, Materialize (formatting for tabs, tables), etc.                     (formatting for tabs, tables), etc.</li>
+                     		<li>- material design: concept introduce by Google</li>
+			</ul>
+                </ul>
+                <li>- CSS Statements</li>
+			<ul>
+                    		<li>- At – Rules</li>
+				<ul>
+                    			<li>- @charset</li>
+                    			<li>- @namespace</li>
+					<li>- @import</li>
+					<li>- @document – specific page or with given url or domain</li>
+					<li>- @fontface – downloadable files</li>
+					<li>- @keyframe – animation</li>
+					<li>- @media – responsive design</li>
+					<li>- @page</li>
+				</ul>
+		   	</ul>
+                    <li>- CSS Rule Sets (aka CSS Rules, Style Rules)</li>
+				<ul>
+                    			<li>- selector followed by brace-enclosed declaration block p (selector){ - target particular element
+						color: #f0o;}
+						/* ---- */ - block comment 
+						// - make it invalid/ improper comment
+                    			</li>
+				</ul>
+                    <li>- CSS Selector</li>
+			<ul>
+                    		<li>- Selector</li>
+				<ul>
+					<li>- elements in the document tree are matched</li>
+					<li>- body ail# x>p-y[title] + span: +-before</li>
+					<li>- condition in a CSS rule</li>
+					<li>- match elements called the subject of the selector</li>
+				</ul>
+				<li>- Selector syntax</li>
+				<ul>	
+					<li>- one or more sequences of simple selector</li>
+					<li>- ex. body(simple) p.xyz (selector sequence) + h1[title]::before (pseudo
+					element)</li>
+				</ul>
+				<li>- sequence of simple selectors</li>
+				<ul>
+					<li>- chain of simple selector not separated by</li>
+					<li>- ex. h1, h2, h3 – group of selector</li>
+				</ul>
+				<li>- simple selectors</li>
+				<ul>
+					<li>- type selector – name of elements in html</li>
+					<li>- universal selector – represented by *; target everything</li>
+					<li>- attribute selector – eg p[title] class = ‘x y’</li>
+					<ul>
+						<li>- [attr]</li>
+						<li>- [attr = value] – specific value</li>
+						<li>- [attr ~= value] – one value out of set of several values</li>
+						<li>- [attr |= value] – language attribute; value = *something*</li>
+						<li>- [attr ^= value] – and</li>
+						<li>- [attr $= value] – dollar</li>
+						<li>- [attr *= value] – anywhere</li>
+					</ul>
+				</ul>
+				<li>- class selector – eg class = ‘x y’ -> p.x</li>
+				<li>- id selector – eg id = ‘id’ -> #id</li>
+				<li>- pseudo-class</li>
+				<li>- dynamic pseudo-class</li>
+					<ul>
+						<li>- link pseudo-classes</li>
+						<ul>
+							<li>-:link</li>
+							<li>-:visited</li>
+						</ul>
+						<li>- user action pseudo-class</li>
+						<ul>
+							<li>-:hover</li>
+							<li>-:active</li>
+							<li>-:focus (tab key)</li>
+						</ul>
+						<li>- target pseudo-class</li>
+							<ul>
+								<li>-:target eg _#x (url)</li>
+								<li>a href = ‘#t1’ – internal link</li>
+								<li>p:target{display: none || block;}</li>
+							</ul>
+						<li>- language pseudo class</li>
+						<ul>
+							<li>-:lang()</li>
+						</ul>
+						<li>- UI element states pseudo class</li>
+						<ul>
+							<li>-:enabled</li>
+							<li>-:disabled</li>
+							<li>-:checked</li>
+							<li>-:indeterminate</li>
+						</ul>
+						<li>- structural pseudo-classes</li>
+						<ul>
+							<li>-:root</li>
+							<li>-:first-child (children)</li>
+							<li>-:last-child (children)</li>
+							<li>-:only-child (children)</li>
+							<li>-:nth-child(n)</li>
+							<li>-:nth-last-child()</li>
+							<li>-:first-of-type</li>
+							<li>-:last-of-type</li>
+							<li>-:only-of-type</li>
+							<li>-:nth-of-type()</li>
+							<li>-:nth-last-of-type()</li>
+							<li>-:empty (eg u1:empty{width:100px height:100px}</li>
+						</ul>
+						<li>- negation pseudo-class</li>
+						<ul>
+							<li>-:not() – (eg body:not(h1){ - type selector/simple selector color: blue;}</li>
+						</ul>
+						<li>- combinators</li>
+						<ul>
+							<li>- descendant combinatory</li>
+							<ul>
+								<li>- whitespace – space, tab, linefeed, carriage, return, form feed (eg body p{ //paragraph descendant of body</li>
+								<li>- child combinatory (eg body > p { //levels below</li>
+								<li>- sibling combinatory</li>
+								<ul>
+									<li>- adjacent sibling combinator (+)(eg h1+p //immediate follows)</li>
+									<li>- general sibling combinatory (~)(eg h1~p //paragraph follows h1)</li>		
+								</ul>
+								<li>- pseudo elements – format just part of it</li>
+								<ul>
+									<li>- ::first-letter, :first-letter(eg h1::first-letter{font size: 2em;}</li>
+									<li>- ::first-line, :first-line</li>
+									<li>- ::before, :before – introduce content before (eg h1::before{content:”topic”;}</li>
+									<li>- ::after, :after – introduce content after element</li>
+								</ul>
+							</ul>
+							<li>- cascading – all elements gets combined</li>
+						</ul>
+				</ul>
+		   </ul>
+		<li>- CSS Rule Precedence</li>
+		   <ul>
+			<li>- by origin and importance</li>
+			<ul>
+				<li>- user agent important declarations</li>
+				<li>- user important declarations - override the author</li>
+				<li>- author important declarations</li>
+				<li>- author normal declarations</li>
+				<li>- user normal declarations</li>
+				<li>- user agent normal declarations – (eg color: red; important;)</li>
+				<li>- transition declarations – change the value of the property from one to
+				another</li>
+				<li>- import override declaration – use javascript to import</li>
+				<li>- animation declarations</li>
+			   </ul>
+			<li>- by specificity - the name specific the higher the importance</li>
+			   <ul>
+				<li>- inline style – put it on the element itself</li>
+				<li>- number of ID selectors(eg id = x => div # x > p# y (important) id = y #x>p (lesser important)</li>
+				<li>- number of class selectors, attribute selectors and pseudo-classes</li>
+				<li>- number of type selectors (p, h1) and pseudo-elements (before, after) (eg body p (more specific) ; p (lesser)</li>
+			   </ul>
+			<li>- by order</li>
+		   </ul>
+		</ul>
+		<li>- CSS Declarations</li>
+			<ul>
+				<li>- properties</li>
 <li>- shorthand properties</li>
 <li>- vendor – specific extensions aka vendor prefixes – experimental</li>
 <li>- values</li>
