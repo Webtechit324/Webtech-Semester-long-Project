@@ -324,6 +324,251 @@
 				</ul>
 		</ul>
         </article>
+	
+	<article>
+            <h2>Java Script</h2>
+            <ul>
+            <li>- Imperative Programming Language</li>
+            <li>- Sequence of Statement</li>
+            <li>- Sequence of Instructions that Modify</li>
+            <li>- Dynamically Type Language</li>
+            <li>- Never Designate Types</li>
+            <li>- Defacto Programming Language for Client Side</li>
+            <li> eg var=100;//number x = hello; //then become a string
+					function max (x,y){ //declaring a function to return type
+					valid //max(5,10) || max(‘hi’, ‘hello’) || max (0, true)</li>
+			<li>- DOM not part of JavaScript</li>
+			<li>- Keywords:</li>
+			<ul>
+				<li>var - Containers for storing Data Values</li>
+				<li>let – only available within the block</li>
+				<li>const – constant declaration; cant re-asign it to other</li>
+			</ul>
+            <li>eg script //top level code
+					var x=100; //property * let x = 100; //not get an error, just create it function f(){ //function level code var x = 200; //local variable; doesn’t exist outside of the function - //function scope variable } let x = 200; //only available in this part only; in this block only - block local variables
+			</li>
+            <li>Difference of Java and JavaScript</li>
+            <span>Java is safe and Very Rigid while JavaScript is Felexible and you know what you are doing</span>
+            <li>Client-side Java Script</li>
+            <ul>
+            	<li>- MDN – Mozilla Developer Network</li>
+            	<li>- ECMAScript (Standard)</li>
+            	<li>- 3 Kinds of putting the JavaScript</li>
+            	<ul>
+            		<li>- <- externally link -> (there’s an defer attribute)</li>
+            		<li>- <- embedded script -> (execute as it is encountered)</li>
+            		<li>- <- inline script -></li>
+            	</ul>
+            	<li>- Parse the Engine Starting from the top and fetch the .js (compile -> execute)</li>
+            	<li>-  Put Code on the Script</li>
+            	<ul>
+            	<li>- Top-Level Tool</li>
+            	<ul>
+            		<span>script>
+							console.log (‘embedded script…’);
+							function callMe(){
+							console.log (‘you called…’);
+							}
+						/script></span>
+            	</ul>
+            	<li>buttononclick = ‘console.log(‘embedded script…’); callMe()’</li>
+            	</ul>
+            	<li>- Defer Attribute </li>
+            	<ul><li>- from the top and when it gets through it (|) will compile -> execute</li>
+            	<li>- Start Fetching and not wait until execute fully done</li>
+            	<li>eg ~~ hello</li>
+            	<li>script> defer type = ‘text/javascript’ src = ‘script.js’</li></ul>
+            	<li>- async attribute </li>
+            	<ul>
+            	<li>- continue rendering the document, but when it is available, it executes and compile it.</li>
+            	<li>- eg ~~~ hello</li>
+            	<li>script type = ‘text/javascript’ src = ‘script.js’> //up or down</li>
+            	<li>- <noscript> no scripting support </noscript> ~no support for scripting</li></ul>
+            	<li>- pre-defined object</li>
+
+            	<ul>
+            	<li>- window (global object) [window.screen.width]</li>
+            	<li>- navigator – vendor, appversion </li>
+            	<li>- screen – width, availHeight</li>
+            	<li>- document – getElementById, childNodes<br>
+            	Example:<ul>
+            		<li>- document.getElementById(‘h’)</li>
+            		<li>- h.innerText = ‘hi’</li>
+            		<li>- h.innerHTML = ‘hi <em> there </em>’</li>
+            		<li>- h.textContent</li>
+            		<li>-h.title</li>
+            		<li>-h.lang</li>
+            		<li>-h[‘lang’] = ‘en.us’</li>
+            	</ul>
+            	<li>- get/set – on normal attribute</li>
+            	<ul>
+            		<li>- h.setAttribute (‘data-extra’, ‘value’)</li>
+            		<li>- h.get Attribute (‘data-extra’)</li>
+            		<li>- h.style = ‘color: blue’</li>
+            		<li>- create an inline style</li>
+            		<li>- available (all) on the style attribute</li>
+            		<li>- all values (if properties) must assign as astring (‘hi’)</li>
+            		<li>- h.style.fontSize = ‘3em’</li>
+            	</ul>
+            	<li>- attribute name</li>
+            	<ul>
+            		<li>- h.className = ‘green-text’</li>
+            		<li>- document.querySelector(‘p’)</li>
+            		<li>- document.querySelectorAll(‘p’) /(‘p:first-child’)/
+						(‘p:first-of-type’) / (‘h1+p’)
+						- first’s p - follow h1 - //return the first element that matches it</li>
+					<li>- s.querySelectorAll(‘p’)</li>
+					<li>- s.matches (‘p’) //=false // all with 's' element</li>
+					<li>- doctype: document.childNodes
+						document.children //=html
+						document.head.childNodes
+						//=title, style, text //elements not paragraph
+					</li>
+            	</ul>
+            	</li></ul>
+
+            <li>- sandbox </li>
+            <ul>
+            	<li>- limited environment to offer</li>
+            	<li>- run the browser</li>
+            </ul>
+            <li>- ctrl + u</li>
+            <ul><li>- look for the script of the certain site in the browser</li>
+            </ul>
+            <li>- window (DOM Tree (document))</li>
+            <li>- document object model</li>
+            <ul>
+            	<li>- HTML/XHTML</li>
+            	<li>- type domination</li>
+            </ul>
+            <li>- DOM3</li>
+            <ul>
+            	<li>- attr = text, entityReference</li>
+            	<li>- document = element, comment</li>
+            	<li>- element = element</li>
+            </ul>
+            <li>-//interface document: (extends/implements) Node{
+				* w3c.dom (check for more information)</li>
+				<li>- Node</li>
+				<ul>
+					<li>- primary datatype for the …</li>
+				</ul>
+				<li>- Constatnt</li>
+				<ul>
+					<li>- documentNode</li>
+					<li>- document.type.node</li>
+					<li>* - nodeName = #document</li>
+					<li>* - nodeValue = null</li>
+					<li>* - childNodes = text, em, text</li>
+					<ul>
+						<span>h1 – document.createElement(‘h1’)* h1>/h1</span>
+						<span>t1 – document.createTextNode(‘text’)* “text”</span>
+						<span>h1 – appendChild t1* text</span>
+						<span>h1* h1 text /h1</span>
+					</ul>
+				<li>- document.body.insertBefore h1 (replacement), p (one who will going to be replace, child of another element)> //insert before the last one h1> text /h1>/li></li>
+				<li>* - nodeType = (“number)</li>
+				<li>* - parentNode</li>
+				<li>- elementNode</li>
+				<li>- notationNode</li>
+				<li>- attributeNode</li>
+				<li>* - querySelector = one node</li>
+				<li>* - querySelectorAll = all nodes</li>
+				<li>- TYPE OF NODES</li>
+				<ul>
+					<li>- insertBefore</li>
+					<li>- replaceChild</li>
+					<li>- removeChild</li>
+					<li>- appendChild</li>
+				</ul>
+				<li>- document.importNode; document.adoptNode – transfer it</li>
+				<ul>
+					<li>- dealing with more than one document</li>
+					<li>- copy to the new document and have duplicate it</li>
+				</ul>
+				<li>- document.firstElementChild</li>
+				<ul>
+					<li>- came from the newest DOM – DOM 4</li>
+					<li>- not all browser support this</li>
+					<li>- still experimental and might be removed yet</li>
+				</ul></ul>
+			<li>- Browser Model Object Implied</li>
+				<span>p innerHTML = ‘hi em class=””> there /em> /p</span>
+				</ul>
+			<li>- Datatype</li>
+			<ul>
+				<li>- simple/primitive</li>
+				<ul>
+					<li>- boolean</li>
+					<ul>
+					<li>- v = true j>v=false || >typeOf v >Boolean
+						‘truthy’ – not really true but it is true
+						‘falsy’ – not really false but false</li>>
+					<li>- 0 = false; other # = true (Number); anything = true; empty = false (String</li>>
+					<li>- undefined values = false; null = false</li>>
+					<li>- eg if(true){ console.log(‘yes’);}</li>>
+					</ul>
+					<li>- nnumbers</li>
+					<ul>
+						<li>varn = 1 ; varn=1.2 – typeOf n||m = number<br>0b101 = 5(binary), 0101 = 65(octal), 1c5 = 100000(hexadecimal)</li>
+					</ul>
+					<li>- strings</li>
+					<ul>
+						<span>‘c’ = “c” || “c” = “c” ; “can’t” = “can\’t”</span>
+						<li>- backcode – ‘jhdkl’ = “jhdkl”</li>
+						<li>- eg i.innerHTML = ‘p <em> jklm </em> /p’</li>
+					</ul>
+					<li>- undefined</li>
+					<ul>
+						<li> - anything that is undefined</li>
+					</ul>
+					<li>- null</li>
+				</ul>
+				<li>- structured/reference (standard object)</li>
+				<ul>
+					<li>- array, Boolean, Date, Error, Function, JSON, Math, Number, Object, RegExp, String, Map, Set, WeakMap, WeakSet </li>
+					<li>- Boolean</li>
+					<ul>
+						<span>Eg b=true		||		b1=newBoolean(true)</span>
+						<li>-type of b "Boolean"	||	-type of b1"Object"</li>
+						<span>Number.Max.value = 1.7976977</span>
+					</ul>
+					<li>- typeOf = Object //everything</li>
+					<li>- instanceOf = number/Boolean //exact representation</li>
+					<li>- Math(object)</li>
+					<ul>
+						<span>Eg Math.random(), Math.pi, Math.E</span>
+					</ul>
+				</ul>
+				<li>- Expressions and Operators</li>
+				<ul>
+					<li>- Javascript’s operators</li>
+					<ul>
+						<li>- instanceOf, typeOf, new, this, theoperator, precendence</li>
+					</ul>
+				</ul>
+				<li>- Function</li>
+				<ul>
+					<li>- procedural abstraction</li>
+					<ul>
+						<li>- name with a block of code</li>
+						<li>- eg Function sayHello(){ //name of function</li>
+						<span>Console.log (“hello”); - defined property that is executable
+						}
+						//sayHello -> look at the content //sayHello() -> see the output</span>
+					</ul>
+				</ul>
+			</ul>
+		</ul>
+	</article>
+            <p> This is to provide you more information about webtek.
+            </p>
+        </article>
+        <article>
+            <h2>This is a sample Reviewer for Web Systems and Technology</h2>
+            <p> This is to provide you more information about webtek.
+            </p>
+        </article>
 	    
         <article>
             <h2>This is a sample Reviewer for Web Systems and Technology</h2>
