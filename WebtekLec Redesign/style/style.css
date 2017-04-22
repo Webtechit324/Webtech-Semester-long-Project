@@ -6,25 +6,25 @@ body {
 	background:url(../img/background.jpg) no-repeat center center fixed #B6B6B4;
 	background-size: cover;
 	white-space: nowrap;
- width: 80%;
-		padding-top: 2%;
-		margin: auto;
-
-
+ 	width: 80%;
+	padding-top: 2%;
+	margin: auto;
 }
+
 .container {
-    text-align: center;
-				width: 100%;
-				background-color: white;
-				border-radius: 30px 30px 0px 0px;
+   	text-align: center;
+	width: 100%;
+	background-color: white;
+	border-radius: 30px 30px 0px 0px;
 
 }
+
 img{
-    float: left;
-    margin-top: 20px;
-    margin-left: 20px;
-    padding-right: 70px;
-    background-size: auto;
+	float: left;
+    	margin-top: 20px;
+    	margin-left: 20px;
+    	padding-right: 70px;
+    	background-size: auto;
 }
 
 a {
@@ -33,16 +33,13 @@ a {
 }
 
 #banner{
-				background-color: white;
-				width: 100%;
-								border-radius: 30px 30px 0px 0px;
-
+	background-color: white;
+	width: 100%;
+	border-radius: 30px 30px 0px 0px;
 }
-
 
 header h1 {
 	text-align: left;
-
 }
 
 header p {
@@ -56,29 +53,33 @@ header h1 a {
 	font-size: 70px;
 	color: green;
 }
+
 .contacts{
-				background: white;
-				margin: 5% 0% 5% 3%;
-    float: left;
-    width: 180px;
+	background: white;
+	margin: 5% 0% 5% 3%;
+    	float: left;
+    	width: 180px;
 }
+
 .contacts a img{
-				margin-left: 30px;	
+	margin-left: 30px;	
 }
+
 .contacts:hover{
-				border: 1px solid orange;
+	border: 1px solid orange;
 }
+
 .desc p{
-    text-align: center;
+    	text-align: center;
 }
+
 nav {
 	background-color: cadetblue;
 	clear: both;
- opacity: 0.7;
+ 	opacity: 0.7;
 	width: 100%;
 	height: auto;
 }
-
 
 #navone {
 	text-align: left;
@@ -101,7 +102,7 @@ nav {
 nav a {
 	color: white;
 	font-size: 25px;
-	 margin-left: 30px;
+	margin-left: 30px;
 }
 
 nav a:hover {
@@ -120,8 +121,8 @@ nav a:hover {
 
 main {
 	white-space: initial;
-
 }
+
 #index article h2 {
 	color: #e7e5cb;
 	padding: 20px;
@@ -133,52 +134,56 @@ main {
 	color: black;
 	font-size: 18px;
 	font-family: sans-serif;
- padding-bottom: 20px;
- padding-top: 20px;
+	padding-bottom: 20px;
+	padding-top: 20px;
 	margin: 100px auto 100px auto;
 	width: 90%;
 	text-align: justify;
 	text-indent: 10px;
 	font-style: italic;
 }
+
 main h2{
-				background: black;
-				color: white;
-				font-family: monospace;
-				padding: 20px;
+	background: black;
+	color: white;
+	font-family: monospace;
+	padding: 20px;
 }
+
 #index img{
-    width: 100px;
-    height: 100px;
+	width: 100px;
+    	height: 100px;
 }
+
 #prelims article h2 {
 	color: #e7e5cb;
 	padding: 10px;
 	background-color: #0f0f0a;
 	font-family: Tahoma;
 	text-align: center;
-    font-size: 30px;
+    	font-size: 30px;
 }
 
 #prelims article ul {
 	color: brown;
 	font-size: 30px;
 	font-family: Calibri;
-    text-align: center;
-    background-color: lavender;
+    	text-align: center;
+    	background-color: lavender;
 }
 
 #prelims article li {
-    padding-top: 20px;
-    color: saddlebrown;
-    text-align: left;
-    font-size: 25px;
+    	padding-top: 20px;
+    	color: saddlebrown;
+    	text-align: left;
+    	font-size: 25px;
 }
+
 #prelims article p {
-    padding-top: 10px;
-    color: brown;
-    text-align: left;
-    font-size: 25px;
+    	padding-top: 10px;
+    	color: brown;
+    	text-align: left;
+    	font-size: 25px;
 }
 
 #midterms article h2 {
@@ -193,7 +198,22 @@ main h2{
 	color: indianred;
 	font-size: 30px;
 	font-family: Calibri;
-    background-color: lightgoldenrodyellow;
+    	background-color: lightgoldenrodyellow;
+}
+
+#midterms article ul {
+    color: brown;
+	font-size: 30px;
+	font-family: Calibri;
+    text-align: center;
+    background-color: lavender;
+}
+
+#midterms article li {
+    padding-top: 20px;
+    color: saddlebrown;
+    text-align: left;
+    font-size: 25px;
 }
 
 #finals article h2 {
@@ -208,7 +228,7 @@ main h2{
 	color: palegreen;
 	font-size: 30px;
 	font-family: Calibri;
-    background-color: oldlace;
+    	background-color: oldlace;
 }
 
 footer {
@@ -218,7 +238,7 @@ footer {
 }
 
 small{
-    font-size: 15px;
-    margin-left: 30%;
-    font-family: arial black;
+    	font-size: 15px;
+    	margin-left: 30%;
+    	font-family: arial black;
 }
