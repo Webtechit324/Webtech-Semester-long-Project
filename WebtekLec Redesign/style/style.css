@@ -44,14 +44,14 @@ header h1 {
 
 header p {
 	text-align: left;
-	color: green;
+	color: black;
 	font-family: Calibri;
 	font-size: 90%;
 }
 
 header h1 a {
 	font-size: 70px;
-	color: green;
+	color: black;
 }
 
 .contacts{
@@ -82,21 +82,19 @@ nav {
 }
 
 #navone {
-	text-align: left;
 	background-color: darkgoldenrod;
-	clear: both;
 }
 
 #navtwo {
-	text-align: left;
 	background-color: #00264d;
-	clear: both;
 }
 
 #navthree {
-	text-align: left;
 	background-color: forestgreen;
-	clear: both;
+}
+
+#navfour{
+	background-color: mediumvioletred;
 }
 
 nav a {
@@ -109,6 +107,12 @@ nav a:hover {
 	color: dodgerblue;
 	background-color: #191919;
 }
+
+#navone a:hover{
+	color: gold;
+	background-color: #191919;
+}
+
 #navtwo a:hover {
 	color: #004080;
 	background-color: #191919;
@@ -116,6 +120,11 @@ nav a:hover {
 
 #navthree a:hover {
 	color: lawngreen;
+	background-color: #191919;
+}
+
+#navfour a:hover{
+	color: indianred;
 	background-color: #191919;
 }
 
@@ -155,80 +164,49 @@ main h2{
     	height: 100px;
 }
 
-#prelims article h2 {
+article h2{
 	color: #e7e5cb;
 	padding: 10px;
 	background-color: #0f0f0a;
 	font-family: Tahoma;
 	text-align: center;
     	font-size: 30px;
+
 }
 
-#prelims article ul {
-	color: brown;
-	font-size: 30px;
-	font-family: Calibri;
-    	text-align: center;
-    	background-color: lavender;
-}
-
-#prelims article li {
-    	padding-top: 20px;
+article li{
+	padding-top: 20px;
     	color: saddlebrown;
     	text-align: left;
     	font-size: 25px;
 }
 
-#prelims article p {
-    	padding-top: 10px;
-    	color: brown;
-    	text-align: left;
-    	font-size: 25px;
+article p{
+	padding-top: 10px;
+	font-size: 25px;
+	font-family: Calibri;
+	text-align: left;
 }
 
-#midterms article h2 {
-	color: #e7e5cb;
-	padding: 10px;
-	background-color: #0f0f0a;
-	font-family: Tahoma;
-	text-align: left;
+#prelims article p {
+    	color: brown;
+    	text-align: left;
 }
 
 #midterms article p {
 	color: indianred;
-	font-size: 30px;
-	font-family: Calibri;
     	background-color: lightgoldenrodyellow;
-}
-
-#midterms article ul {
-    color: brown;
-	font-size: 30px;
-	font-family: Calibri;
-    text-align: center;
-    background-color: lavender;
-}
-
-#midterms article li {
-    padding-top: 20px;
-    color: saddlebrown;
-    text-align: left;
-    font-size: 25px;
-}
-
-#finals article h2 {
-	color: #e7e5cb;
-	padding: 10px;
-	background-color: #0f0f0a;
-	font-family: Tahoma;
-	text-align: left;
 }
 
 #finals article p {
 	color: palegreen;
-	font-size: 30px;
-	font-family: Calibri;
     	background-color: oldlace;
+}
+
+#acronym article p {
+	color: darkred;
+	background-color: lightpink;
+	width: 1000px;
 }
 
 footer {
