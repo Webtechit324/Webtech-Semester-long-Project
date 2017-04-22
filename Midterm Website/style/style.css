@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+}
+
+body {
+	background:url(../img/background.jpg) no-repeat center center fixed #B6B6B4;
+	background-size: cover;
+	white-space: nowrap;
+ 	width: 80%;
+	padding-top: 2%;
+	margin: auto;
+}
+
+.container {
+   	text-align: center;
+	width: 100%;
+	background-color: white;
+	border-radius: 30px 30px 0px 0px;
+
+}
+#sub{
+	color:green;
+}
+.highlight{
+	color:green;
+}
+.expand{
+	padding: 45px;
+}
+img{
+	float: left;
+    	margin-top: 20px;
+    	margin-left: 20px;
+    	padding-right: 70px;
+    	background-size: auto;
+}
+
+a {
+	text-decoration: none;
+	font-family:monospace;
+}
+
+#banner{
+	background-color: white;
+	width: 100%;
+	border-radius: 30px 30px 0px 0px;
+}
+
+header h1 {
+	text-align: left;
+}
+
+header p {
+	text-align: left;
+	color: black;
+	font-family: Calibri;
+	font-size: 90%;
+}
+
+header h1 a {
+	font-size: 70px;
+	color: black;
+}
+
+.contacts{
+	background: white;
+	margin: 5% 0% 5% 3%;
+    	float: left;
+    	width: 180px;
+}
+
+.contacts a img{
+	margin-left: 30px;	
+}
+
+.contacts:hover{
+	border: 1px solid orange;
+}
+
+.desc p{
+    	text-align: center;
+}
+
+nav {
+	background-color: cadetblue;
+	clear: both;
+ 	opacity: 0.7;
+	width: 100%;
+	height: auto;
+}
+
+#navone {
+	background-color: darkgoldenrod;
+}
+
+#navtwo {
+	background-color: #00264d;
+}
+
+#navthree {
+	background-color: forestgreen;
+}
+
+#navfour{
+	background-color: mediumvioletred;
+}
+
+nav a {
+	color: white;
+	font-size: 25px;
+	margin-left: 30px;
+}
+
+nav a:hover {
+	color: dodgerblue;
+	background-color: #191919;
+}
+
+#navone a:hover{
+	color: gold;
+	background-color: #191919;
+}
+
+#navtwo a:hover {
+	color: #004080;
+	background-color: #191919;
+}
+
+#navthree a:hover {
+	color: lawngreen;
+	background-color: #191919;
+}
+
+#navfour a:hover{
+	color: indianred;
+	background-color: #191919;
+}
+
+main {
+	white-space: initial;
+}
+
+#index article h2 {
+	color: #e7e5cb;
+	padding: 20px;
+	background-color: #0f0f0a;
+	font-family: monospace;
+}
+
+#index article p {
+	color: black;
+	font-size: 18px;
+	font-family: sans-serif;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	margin: 100px auto 100px auto;
+	width: 90%;
+	text-align: justify;
+	text-indent: 10px;
+	font-style: italic;
+}
+
+main h2{
+	background: black;
+	color: white;
+	font-family: monospace;
+	padding: 20px;
+}
+
+#index img{
+	width: 100px;
+    	height: 100px;
+}
+
+article h2{
+	color: #e7e5cb;
+	padding: 10px;
+	background-color: #0f0f0a;
+	font-family: Tahoma;
+	text-align: center;
+    	font-size: 30px;
+
+}
+
+article li{
+	padding-top: 20px;
+    	color: saddlebrown;
+    	text-align: left;
+    	font-size: 25px;
+}
+
+article p{
+	padding-top: 10px;
+	font-size: 25px;
+	font-family: Calibri;
+	text-align: left;
+}
+
+#prelims article p {
+    	color: brown;
+    	text-align: left;
+}
+
+#midterms article p {
+	color: indianred;
+    	background-color: lightgoldenrodyellow;
+}
+
+#finals article p {
+	color: palegreen;
+    	background-color: oldlace;
+}
+
+#acronym article p {
+	color: darkred;
+	background-color: lightpink;
+	width: 1000px;
+}
+
+footer {
+	clear: both;
+	background-color: white;
+	width: 100%;
+}
+
+small{
+    	font-size: 15px;
+    	text-align: center;
+    	font-family: arial black;
+}
