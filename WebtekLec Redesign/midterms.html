@@ -135,6 +135,167 @@
         </article>
          
 	<article>
+        	<h2>CSWS (Client-Side Web Scripting)</h2>
+        	<ul>
+        		<li>- XHTML 1.0 – January 26 2000</li>
+        		<ul>
+        			<li>- reformulation of HTML in XHTML</li>
+        			<ul>
+        				<li>- markup data not web pages</li>
+        				<li>- rules are very strict</li>
+        			</ul>
+        			<li>- deprecated – don’t use it anymore</li>
+        			<li>- Rules</li>
+        			<ul>
+        				<li>- input disabled</li>
+        				<li>- values</li>
+        				<li>- have beginning p and ending /p</li>
+        				<li>- case sensitive – limits the connect</li>
+        				<li>- documents must be well form</li>
+        				<li>- camel case only (non case sensitive)</li>
+        				<li>- attribute values must always be open</li>
+        				<li>- end tag is require</li>
+        			</ul>
+        		</ul>
+        		<li>- WHATWG (web hypertext application technology working group)</li>
+        		<ul>
+        			<li>- 2005 – 2006</li>
+        			<li>- Ian Hickson – works for google</li>
+        			<li>- started the new version of HTML</li>
+        			<li>- 2012 issue to standardize as root</li>
+        		</ul>
+        		<li>- typical structure of a webpage (empty element)</li>
+        		<ul>
+        			<span>!DOCTYPE html
+						html lang = “en” - html element, root
+						head - start of the CHILDREN
+						meta charset = “UTF-8” - empty: no content; information of data
+						title /title - author, keyword, title of the document
+						/head - end of the CHILDREN
+						body - actual content to be seen by the user/client
+						p
+						a href = “link”> - <a> beginning/start tag – href attribute/tag name “link” content/value - /a end tag
+						/a
+						/p
+						img src = “” alt = “”
+						!—comment -- > - to insert a comment
+						/body
+						/html</span>
+        		</ul>
+        		<li>- p element (paragraph)</li>
+        		<ul>
+        			<li>- heading – h1, h2, h3</li>
+        			<li>- sectioning</li>
+        			<li>- phrasing – u, var, bdo, canvas, video</li>
+        		</ul>
+        		<li>- flow content</li>
+        		<li>- content model : phrasing content</li>
+        		<li>- tag omission in text/html : A p element’s end tag</li>
+        		<li>- content attributes: global attributes – lang, id, hidden, dir</li>
+        		<li>- DOM interface : interface HTMLParagraphElement: HTMLElement ();</li>
+        	</ul>
+        	<li>- img element (image)</li>
+        	<ul>
+        		<li>- embedded content</li>
+        		<li>- content model: nothing (empty element)</li>
+        		<li>- tag omission: empty</li>
+        		<li>- content attributes: alt, width, height</li>
+        		<li>- DOM Interfaces:</li>
+        	</ul>
+        	<li>- HTML Elements:</li>
+        	<ul>
+        		<li>- html (root element)</li>
+        		<li>- head (child)</li>
+        		<ul>
+        			<li>- title – title</li>
+        			<li>- base – relative</li>
+        			<li>- link – different resource (eg stylesheet)</li>
+        			<li>- meta – other meta info (eg keywords, author tool)</li>
+        			<li>- style – embedding</li>
+        		</ul>
+        		<li>- body (child)</li>
+        		<ul>
+        			<li>- article, aside, nav, section</li>
+        			<li>- header, footer</li>
+        			<li>- main (main content)</li>
+        			<li>- address (contact information)</li>
+        			<li>- div (generic section content)</li>
+        			<li>- h1, h2, h3, h4, h5, h6 – sub-heading</li>
+        			<ul>
+        				<li>- main heading</li>
+        			</ul>
+        			<li>- p (paragraph)</li>
+        			<li>- hr (horizontal line) – hematic break: theme break</li>
+        			<li>- pre (preformed text) – preserved: white space, new line</li>
+        			<li>- blockquote: quotation (q) , citation (cite)</li>
+        			<li>- list: ol (ordered), ul (unordered), li (list); (eg ol start = 10></li>
+        			<li>- description list (dl) : dt (term), dd (actual)</li>
+        			<li>- figure: figcaption</li>
+        			<li>- a (anchor)</li>
+        			<li>- em, strong (emphasize), small, s (side comment), (obsolete text)</li>
+        			<li>- cite, q</li>
+        			<li>- defining instant: dfn, abbr (abbreviation)</li>
+        			<li>- ruby, rb, rt, rtc, rp</li>
+        			<li>- data, time (information/code)</li>
+        			<li>- code, var, samp, kbd (embedding computer code)</li>
+        			<li>- superscript (sup), subscript (sub)</li>
+        			<li>- i (italize), b (bold), u (underline) – depreciated element; 401 strict, mark</li>
+        			<li>- by directional text: bdi, bdo</li>
+        			<li>- text level division: span</li>
+        			<li>- break opportunity: br, wbr</li>
+        			<li>- news, documents edit: ins, del</li>
+        			<li>- table: table, caption, colgroup, col, +head, +body, +foot, tr, th, td</li>
+        			<li>- form: label</li>
+        			<li>- math: svg, canvas (eg snake game)</li>
+        			<li>- script, no script</li>
+        			<li>- template</li>
+
+        		</ul>
+        	</ul>
+        	<li>- HTML/XHTML Stylesheets</li>
+        	<ul>
+        		<li>- author styles – author of document/web development team</li>
+        		<ul>
+        			<li>- external styles – link across multiple html</li>
+        			<span>head
+						link rel = “stylesheet” types = “text/css” href = “style.css”
+						// media = print (css3), screen (css3), tv, brail, projection,
+						speech (css3)
+						// title = large, normal, small font>
+						// link rel = “stylesheet”/”alternate stylesheet”
+					</span>
+					<li>- embedded stylesheet – single page website</li>
+					<span>style type = “text/css” media = “screen and (min-width:500px;) body{width:90%;}/style
+					</span>
+					<li>- inline stules</li>
+					<span>p style(attribute) = “border:1px solid green; color:blue;”//head</span>
+        		</ul>
+        		<li>- user style – provided by the area; viewing the page</li>
+        		<li>- user agent styles (example default css 2.1 stylesheet for html4)</li>
+        		<ul>
+        			<li>- browser itself (default css stylesheet)</li>
+        			<li>- ResetCSS – Xss stylesheet that can link to everything</li>
+        		</ul>
+        	</ul>
+        	<li>- HTML Processor</li>
+        	<ul>
+        		<li>- HAML (Ruby), Markdown, Slim, Pug</li>
+        		<ul>
+        			<span>Ex.</span>
+        			<ul>
+        				<p>%body 		body</p>
+        				<p>%div 		div</p>
+        				<p>%p 		phello world /p</p>
+        				<p>	Hello world 		/div /body</p>
+        				<p>* - var = “my variable” -> %h1 = var</p>
+						<p>* %p.abc content p id = abc > content /p</p>
+        			</ul>
+        		</ul>
+        	</ul>
+        	</ul>
+        </article>    
+	    
+	<article>
            <h2>CSS(Cascading Style Sheet)</h2>
            <ul>
              <li>- structural markup documents</li>
