@@ -4,9 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Midterms</title>
 <link rel="stylesheet" href="./style/style.css"/>
-
-
 </head>
+	
 <body id="bodytwo">
 <div class="container">
     <header>
@@ -15,10 +14,11 @@
             <a href="index.html">Web <span class="highlight">Tek</span></a></h1>
         <p>Web Systems and Technologies Reviewer 2017</p>
         <nav id="navtwo">
-            <a  class="current" href="index.html">Reviewer</a>
-            <a href="prelims.html">Prelims</a>
+            	<a  class="current" href="index.html">Reviewer</a>
+            	<a href="prelims.html">Prelims</a>
          	<a href="midterms.html">Midterms</a>
-            <a href="finals.html">Finals</a>
+           	<a href="finals.html">Finals</a>
+		<a href="acronym.html">Acronym</a>
         </nav>
     </header>
     <main id="midterms">
@@ -125,6 +125,7 @@
 				<p>- template</p>
             </ul>
         </article>
+	    <article>
             <h2>Extensible Hypertext Markup Language</h2>
             <ul>
                 <li>Reformulation of HTML in XML</li>
@@ -211,7 +212,7 @@
 						/head - end of the CHILDREN
 						body - actual content to be seen by the user/client
 						p
-						a href = “link”> - <a> beginning/start tag – href attribute/tag name “link” content/value - /a end tag
+						a href = “link”> - "a" beginning/start tag – href attribute/tag name “link” content/value - /a end tag
 						/a
 						/p
 						img src = “” alt = “”
@@ -328,7 +329,6 @@
 						<p>* %p.abc content p id = abc > content /p</p>
         			</ul>
         		</ul>
-        	</ul>
         	</ul>
         </article>    
 	    
@@ -590,8 +590,8 @@
 				<ul>
 				<li>- bootstrap (bootstrap.com)
 				/*<span class = ‘btn btn – (default, primary, success, info, danger, warning)’>click </span>
-				<span class = ‘btn btn – (xs, (sm-small), lg (large), md, xl) </span>
-				<table class = ‘table table – hover table – stri </table>
+				<span class = ‘btn btn – (xs, (sm-small), lg (large), md, xl)> </span>
+				<table class = ‘table table – hover table – stri> </table>
 				<ul class = ‘nav (nav-pills, active, nav-tabs)’></ul>
     				<img src = “___.jpg” alt=””>*/
 				</ul>
@@ -698,7 +698,7 @@
 						//=title, style, text //elements not paragraph
 					</li>
             	</ul>
-            	</li></ul>
+            	</ul>
 
             <li>- sandbox </li>
             <ul>
@@ -834,26 +834,9 @@
 			</ul>
 		</ul>
 	</article>
-            <p> This is to provide you more information about webtek.
-            </p>
-        </article>
+       
         <article>
-            <h2>This is a sample Reviewer for Web Systems and Technology</h2>
-            <p> This is to provide you more information about webtek.
-            </p>
-        </article>
-	    
-        <article>
-            <h2>This is a sample Reviewer for Web Systems and Technology</h2>
-            <p> This is to provide you more information about webtek.
-            </p>
-        </article>
-        <article>
-            <h2>This is a sample Reviewer for Web Systems and Technology</h2>
-            <p> This is to provide you more information about webtek.
-            </p>
-        </article>
-        <article>
+		<ul>
             <h2>Asynchronous JavaScript and XML (AJAX)</h2>
             <p> Synchronous Request <br>
 			<li>Recommended for few small requests. JavaScript will not continue to execute, until the server response is ready. If the server is busy or slow, the application will hang or stop.
@@ -868,7 +851,7 @@
 			var str = xhr.responseText;<br>
 		}<br>
 				<p>other Example</p><br>
-			var xhr = new XMLHttpRequest();<br>
+			<p>var xhr = new XMLHttpRequest();<br>
 			xhr.open(“POST”, “products.php”, true);<br>
 			xhr.setRequestHeader(“Content-Type”, “application/x-www-form-urlencoded”);<br>
 			xhr.onreadystatechange = function(){<br>
@@ -889,7 +872,7 @@
 				“MSXML2.XmlHttp.3.0”,<br>
 				“MSXML2.XmlHttp”,<br>
 				“Microsoft.XmlHttp”];<br>
-				for(var i=0; i<activeXIDs.length;i++){<br>
+				for(var i=0; i<activeXIDs.length;i++){ <br>
 				try{<br>
 				xhr = new ActiveXObject(activeXIDs[i]);<br>
 				}catch(e){}<br>
@@ -940,9 +923,10 @@
 
         </article>
     </main>
+</div>
     <footer>
         <small>&copy; 2017 Webtek</small>
     </footer>
-</div>
+
 </body>
 </html>
