@@ -29,7 +29,18 @@
 				<h2 >HTML (Hypertext Markup Language)</h2>
 				<ul>
 					<li>The language for building the structure of the web pages.</li>
-					<h2 id="section1">HTML Versions</h2>
+					<li>That is formatted in a special way.</li>
+                    			<li> Structure and Content</li>
+                    			<p> - statistics, storing</p>
+                    			<p> - markup the structure and th content</p>
+                    			<li> Aesthetics/Presentational Aspect</li>
+                    			<p> - not modern practice</p>
+                    			<p> - not use in today's generation</p>
+                    			<li> Behavioral Aspect</li>
+                    			<p> - earlier age - static resource; look at the information</p>
+                    			<p> today - there is interaction</p>
+					
+				<h2 id="section1">HTML Versions</h2>
 					<ul id="section1a">
 					<li >HTML 1.0</li>
 					<ul >
@@ -40,7 +51,11 @@
 						<li>Embodied to a technical document</li>
 						<li>RFC 1866 Nov 1995 – W3C (world wide web consortium) (same year) : organized by IETF (internet engineering task force)
 						</li>
+						</ul>
+                    				<li>HTML 3.0</li>
+                    				<ul>
 						<li>W3C Recommendation</li>
+						</ul>
 					</ul>
 					<li>HTML 3.2</li>
 					<li>HTML 4.0</li>
@@ -72,10 +87,6 @@
 					<li>HTML 5.2 </li>
 					<ul>
 						<li>ongoing</li>
-						<ul>
-							<li>XHTML 1.0 </li>
-							<li>January 26 2000 </li>
-						</ul>
 					</ul>
 					</ul>
 				
@@ -126,8 +137,37 @@
 						<li>template</li>
 					</ul>
 				</ul>
-				<h2 id="section3">Extensible Hypertext Markup Language</h2>
-				<ul id="section3a">
+				
+				<h2 id="section3">HTML/XHTML Stylesheets</h2>
+				    <ul id="section3a">
+					<li>- author styles – author of document/web development team</li>
+					<p>- external styles – link across multiple html</p>
+					<img src="img/externalstyles.png" alt="">
+				    <div class="clear">
+				    </div>                        
+					<p>- embedded stylesheet – single page website</p>
+					<img src="img/embeddedstyles.png" alt="">
+				    <div class="clear">
+				    </div>                        
+					<p>- inline styles</p>
+					<img src="img/inlinestyles.png" alt="">
+				    <div class="clear">
+				    </div>                        
+					<li>- user style – provided by the area; viewing the page</li>
+					<li>user agent styles (example default css 2.1 stylesheet for html4)</li>
+					<p>- browser itself (default css stylesheet)</p>
+					<p>- ResetCSS – Xss stylesheet that can link to everything</p>
+				    </ul>
+				<h2 id="section4">HTML Processor</h2>
+				    <ul id="section4a">
+					<li>- HAML (Ruby), Markdown, Slim, Pug</li>
+					<img src="img/haml.png">
+				    <div class="clear">
+				    </div>
+				    </ul>
+				
+				<h2 id="section5">Extensible Hypertext Markup Language</h2>
+				<ul id="section5a">
 					<li>Reformulation of HTML in XML</li>
 					<li>Versions</li>
 					<li>XHTML 1.0</li>
@@ -171,7 +211,6 @@
 					<li>Following the specification by W3C for HTML, CSS</li>
 				</ul>
 				</ul>
-				</ul>
 			</article>
 
 			<article>
@@ -205,9 +244,12 @@
 						<li>2012 issue to standardize as root</li>
 					</ul>
 					<li>typical structure of a webpage (empty element)</li>
-					<ul>
-						<img src="./img/doc.png">
-					</ul>
+						<ul>
+						    <p>Example</p>
+						    <img src="img/typicalstructureofawebpage.png" alt="">
+						    <div class="clear">
+						    </div>
+						</ul>
 					<li>p element (paragraph)</li>
 					<ul>
 						<li>heading – h1, h2, h3</li>
@@ -228,6 +270,55 @@
 						<li>DOM Interfaces:</li>
 					</ul>
 				</ul>
+				
+				<h2>HTML Elements:</h2>
+				<ul>
+					<li>html (root element)</li>
+					<li>head (child)</li>
+					<ul>
+						<li>title – title</li>
+						<li>base – relative</li>
+						<li>link – different resource (eg stylesheet)</li>
+						<li>meta – other meta info (eg keywords, author tool)</li>
+						<li>style – embedding</li>
+					</ul>
+					<li>body (child)</li>
+					<ul>
+						<li>article, aside, nav, section</li>
+						<li>header, footer</li>
+						<li>main (main content)</li>
+						<li>address (contact information)</li>
+						<li>div (generic section content)</li>
+						<li>h1, h2, h3, h4, h5, h6 – sub-heading</li>
+						<li>main heading</li>
+						<li>p (paragraph)</li>
+						<li>hr (horizontal line) – hematic break: theme break</li>
+						<li>pre (preformed text) – preserved: white space, new line</li>
+						<li>blockquote: quotation (q) , citation (cite)</li>
+						<li>list: ol (ordered), ul (unordered), li (list); (eg ol start = 10></li>
+						<li>description list (dl) : dt (term), dd (actual)</li>
+						<li>figure: figcaption</li>
+						<li>a (anchor)</li>
+						<li>em, strong (emphasize), small, s (side comment), (obsolete text)</li>
+						<li>cite, q</li>
+						<li>defining instant: dfn, abbr (abbreviation)</li>
+						<li>ruby, rb, rt, rtc, rp</li>
+						<li>data, time (information/code)</li>
+						<li>code, var, samp, kbd (embedding computer code)</li>
+						<li>superscript (sup), subscript (sub)</li>
+						<li>i (italize), b (bold), u (underline) – depreciated element; 401 strict, mark</li>
+						<li>by directional text: bdi, bdo</li>
+						<li>text level division: span</li>
+						<li>break opportunity: br, wbr</li>
+						<li>news, documents edit: ins, del</li>
+						<li>table: table, caption, colgroup, col, +head, +body, +foot, tr, th, td</li>
+						<li>form: label</li>
+						<li>math: svg, canvas (eg snake game)</li>
+						<li>script, no script</li>
+						<li>template</li>
+					</ul>
+				</ul>
+				
 				
 				<h2>HTML/XHTML Stylesheets</h2>
 				<ul>
@@ -305,13 +396,13 @@
 						<li>@page</li>
 					</ul>
 				</ul>
-				</ul>
+		
 				<h2>CSS Rule Sets (aka CSS Rules, Style Rules)</h2>
 				<ul>
 					<li>selector followed by brace-enclosed declaration block</li>
 					<img src="./img/CSSRulesSets.png">
 				</ul>
-				</ul>
+				
 				<h2 >CSS Selector</h2>
 				<ul>
 					<li>Selector</li>
@@ -365,9 +456,8 @@
 						</ul>
 						<li>target pseudo-class</li>
 						<ul>
-							<li>-:target eg _#x (url)</li>
-							<li>a href = ‘#t1’ – internal link</li>
-							<li>p:target{display: none || block;}</li>
+							<img src="./img/targetpseudoclass.png" alt="">
+                            				<div class="clear"></div>
 						</ul>
 						<li>language pseudo class</li>
 						<ul>
@@ -422,7 +512,7 @@
 						</ul>
 					</ul>
 				</ul>
-				</ul>
+				
 				<h2>CSS Rule Precedence</h2>
 				<ul>
 					<li>by origin and importance</li>
@@ -448,7 +538,7 @@
 					</ul>
 					<li>by order</li>
 				</ul>
-				</ul>
+				
 				<h2>CSS Declarations</h2>
 				<ul>
 					<li>properties</li>
@@ -492,9 +582,13 @@
 						<ul>
 							<li>syntactically awesome stylesheet; new SCSS</li>
 							<ul>
-								<img src="./img/SASSnew.png" alt="">
-								<img src="./img/SASSnew1.png" alt="">
-								<img src="./img/GUI.png" alt="">
+								<img src="./img/scss.png" alt="">
+                               					<div class="clear"></div>
+								<li>nested part : </li>
+                               					<img src="./img/nestedpart.png" alt="">
+                               					<div class="clear"></div>
+								<li>build in GUI (Graphic User Interface)</li>
+								<li>eg div => div p{ color:red; } p color: red</li>
 							</ul>
 							<li>LESS – works on javascript; node.js</li>
 							<li>SCSS</li>
@@ -505,6 +599,7 @@
 							<li>Foundation</li>
 							<li>Materialize</li>
 							<img src="./img/Materialize.png" alt="">
+							<div class="clear"></div>
 						</ul>
 					</ul>
 				</ul>
@@ -512,6 +607,7 @@
 				<ul>
 					<li>bootstrap (bootstrap.com)
 					<img src="./img/CSSFramework.png" alt="">
+						<div class="clear"></div>
 				</ul>
 			</article>
 			<article>
@@ -523,7 +619,8 @@
 					<li>Dynamically Type Language</li>
 					<li>Never Designate Types</li>
 					<li>Defacto Programming Language for Client Side</li>
-					<li> eg var=100;//number x = hello; //then become a string function max (x,y){ //declaring a function to return type valid //max(5,10) || max(‘hi’, ‘hello’) || max (0, true)</li>
+						<img src="./img/javascript.png" alt="">
+                    				<div class="clear"></div>
 					<li>DOM not part of JavaScript</li>
 					<li>Keywords:</li>
 					<ul>
@@ -533,6 +630,8 @@
 					</ul>
 					<li>eg script //top level code var x=100; //property * let x = 100; //not get an error, just create it function f(){ //function level code var x = 200; //local variable; doesn’t exist outside of the function //function scope variable } let x = 200; //only available in this part only; in this block only block local variables
 					</li>
+						<img src="./img/script1.png" alt="">
+                    				<div class="clear"></div>
 					<li>Difference of Java and JavaScript</li>
 					<ul>
 						<li>Java is safe and Very Rigid while JavaScript is Felexible and you know what you are doing</li>
@@ -554,24 +653,27 @@
 					<ul>
 						<li>Top-Level Tool</li>
 						<ul>
-							<li>script> console.log (‘embedded script…’); function callMe(){ console.log (‘you called…’); } /script>
-							</li>
+							<img src="./img/topleveltool1.png" alt="">
+                           	 			<div class="clear"></div>
 						</ul>
-						<li>buttononclick = ‘console.log(‘embedded script…’); callMe()’</li>
+							<img src="./img/topleveltool.png" alt="">
+                        				<div class="clear"></div>
 					</ul>
+		
 					<li>defer Attribute </li>
 					<ul>
 						<li>from the top and when it gets through it (|) will compile -> execute</li>
 						<li>Start Fetching and not wait until execute fully done</li>
 						<li>eg ~~ hello</li>
-						<li>script> defer type = ‘text/javascript’ src = ‘script.js’</li>
+						<img src="./img/deferattribute.png" alt="">
+                        			<div class="clear"></div>
 					</ul>
 					<li>async attribute </li>
 					<ul>
 						<li>continue rendering the document, but when it is available, it executes and compile it.</li>
 						<li>eg ~~~ hello</li>
-						<li>script type = ‘text/javascript’ src = ‘script.js’> //up or down</li>
-						<li><noscript> no scripting support </noscript> ~no support for scripting</li>
+						<img src="./img/asyncattribute.png" alt="">
+                    				<div class="clear"> </div>
 					</ul>
 					<li>pre-defined object</li>
 
@@ -627,7 +729,7 @@
 						<li>type domination</li>
 					</ul>
 				</ul>
-				<h2>DOM3</h2>
+				<h2>DOM</h2>
 				<ul >
 					<li>attr = text, entityReference</li>
 					<li>document = element, comment</li>
@@ -646,10 +748,8 @@
 					<li>* nodeValue = null</li>
 					<li>* childNodes = text, em, text</li>
 					<ul>
-						<li>h1 – document.createElement(‘h1’)* h1>/h1</li>
-						<li>t1 – document.createTextNode(‘text’)* “text”</li>
-						<li>h1 – appendChild t1* text</li>
-						<li>h1* h1 text /h1</li>
+						<img src="./img/childnodes.png" alt="">
+                        			<div class="clear"></div>
 					</ul>
 					<li>document.body.insertBefore h1 (replacement), p (one who will going to be replace, child of another element)> //insert before the last one h1> text /h1>/li></li>
 					<li>* nodeType = (“number)</li>
@@ -679,7 +779,8 @@
 					</ul>
 					<li>Browser Model Object Implied</li>
 					<ul>
-						<li>p innerHTML = ‘hi em class=””> there /em> /p</li>
+						<img src="./img/browsermodelobject.png" alt="">
+                        			<div class="clear"></div>
 					</ul>
 				</ul>
 				<h2>Data Type</h2>
@@ -688,10 +789,8 @@
 					<ul>
 						<li>boolean</li>
 						<ul>
-							<li>v = true j>v=false || >typeOf v >Boolean ‘truthy’ – not really true but it is true ‘falsy’ – not really false but false</li>
-							<li>0 = false; other # = true (Number); anything = true; empty = false (String</li>
-							<li>undefined values = false; null = false</li>
-							<li>eg if(true){ console.log(‘yes’);}</li>
+							<img src="./img/boolean.png" alt="">
+                            				<div class="clear"></div>
 						</ul>
 						<li>numbers</li>
 						<ul>
@@ -699,9 +798,8 @@
 						</ul>
 						<li>strings</li>
 						<ul>
-							<li>‘c’ = “c” || “c” = “c” ; “can’t” = “can\’t”</li>
-							<li>backcode – ‘jhdkl’ = “jhdkl”</li>
-							<li>eg i.innerHTML = ‘p <em> jklm </em> /p’</li>
+							<img src="./img/strings.png" alt="">
+                            				<div class="clear"></div>
 						</ul>
 						<li>undefined</li>
 						<ul>
@@ -737,12 +835,12 @@
 						<li>procedural abstraction</li>
 						<ul>
 							<li>name with a block of code</li>
-							<li>eg Function sayHello(){ //name of function</li>
-							<li>Console.log (“hello”); defined property that is executable } //sayHello -> look at the content //sayHello() -> see the output</li>
+							<img src="./img/function.png" alt="">
+                           				<div class="clear"></div>
 						</ul>
 					</ul>
 				</ul>
-				</ul>
+				
 			</article>
 			<article>
 				<h2>Asynchronous JavaScript and XML (AJAX)</h2>
