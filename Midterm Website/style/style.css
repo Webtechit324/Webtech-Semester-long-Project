@@ -115,6 +115,12 @@ nav {
 #section1:hover{
 	background:blue;
 }
+#section2:hover{
+	background:blue;
+}
+#section3:hover{
+	background:blue;
+}
 #section1a{
 	display:none;
 	
@@ -124,6 +130,238 @@ nav {
 }
 #section3a{
 	display:none;
+}
+#section4a{
+	display:none;
+}
+#section4:hover{
+	background:blue;
+}
+#section4{
+	background: orangered;
+	width: 80%;
+}
+#section5a{
+	display:none;
+}
+#section5:hover{
+	background:blue;
+}
+#section5{
+	background: orangered;
+	width: 80%;
+}
+#section6{
+	color: blue;
+}
+
+#section6a{
+	display: none;
+}
+#section7{
+	color: blue;
+}
+
+#section7a{
+	display: none;
+}
+#section8{
+	color: blue;
+}
+
+#section8a{
+	display: none;
+}
+
+#section9{
+	color: blue;
+}
+
+#section9a{
+	display: none;
+}
+#section10{
+	color: blue;
+}
+
+#section10a{
+	display: none;
+}
+#section11{
+	color: blue;
+}
+
+#section11a{
+	display: none;
+}
+#section12{
+	color: blue;
+}
+
+#section12a{
+	display: none;
+}
+#section13{
+	color: blue;
+}
+
+#section13a{
+	display: none;
+}
+#section14{
+	color: blue;
+}
+
+#section14a{
+	display: none;
+}
+#section15{
+	color: blue;
+}
+
+#section15a{
+	display: none;
+}
+#section16{
+	color: blue;
+}
+
+#section16a{
+	display: none;
+}
+#section17{
+	color: blue;
+}
+
+#section17a{
+	display: none;
+}
+#section18{
+	color: blue;
+}
+
+#section18a{
+	display: none;
+}
+#section19{
+	color: blue;
+}
+
+#section19a{
+	display: none;
+}
+#section20{
+	color: blue;
+}
+
+#section20a{
+	display: none;
+}
+#section21{
+	color: blue;
+}
+
+#section21a{
+	display: none;
+}
+#section22{
+	color: blue;
+}
+
+#section22a{
+	display: none;
+}
+
+#section23{
+	color: blue;
+}
+
+#section23a{
+	display: none;
+}
+#section24{
+	color: blue;
+}
+
+#section24a{
+	display: none;
+}
+#section25{
+	color: blue;
+}
+
+#section25a{
+	display: none;
+}
+#section26{
+	color: blue;
+}
+
+#section26a{
+	display: none;
+}
+#section27{
+	color: blue;
+}
+
+#section27a{
+	display: none;
+}
+#section28{
+	color: blue;
+}
+
+#section28a{
+	display: none;
+}
+#section29{
+	color: blue;
+}
+
+#section29a{
+	display: none;
+}
+#section30{
+	color: blue;
+}
+
+#section30a{
+	display: none;
+}
+#section31{
+	color: blue;
+}
+
+#section31a{
+	display: none;
+}
+#section32{
+	color: blue;
+}
+
+#section32a{
+	display: none;
+}
+#section33{
+	color: blue;
+}
+
+#section33a{
+	display: none;
+}
+#section34{
+	color: blue;
+}
+
+#section34a{
+	display: none;
+}
+#section35{
+	color: blue;
+}
+
+#section35a{
+	display: none;
 }
 #navone {
 	background-color: darkgoldenrod;

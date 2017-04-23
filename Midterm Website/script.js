@@ -1,17 +1,5 @@
 
 $(function(){
-	$('#cssSection').click(function(){
-		$('#cssPanel').slideToggle(300);
-	})
-})
-
-$(function(){
-	$('#jsSection').click(function(){
-		$('#jsPanel').slideToggle(300);
-	})
-})
-
-$(function(){
 	$('#section1').click(function(){
 		$('#section1a').slideToggle(300);
 	})
@@ -26,5 +14,177 @@ $(function(){
 $(function(){
 	$('#section3').click(function(){
 		$('#section3a').slideToggle(300);
+	})
+})
+
+$(function(){
+	$('#section4').click(function(){
+		$('#section4a').slideToggle(300);
+	})
+})
+
+$(function(){
+	$('#section5').click(function(){
+		$('#section5a').slideToggle(300);
+	})
+})
+
+$(function(){
+	$('#section6').click(function(){
+		$('#section6a').slideToggle(300);
+	})
+})
+
+$(function(){
+	$('#section7').click(function(){
+		$('#section7a').slideToggle(300);
+	})
+})
+
+$(function(){
+	$('#section8').click(function(){
+		$('#section8a').slideToggle(300);
+	})
+})
+
+$(function(){
+	$('#section9').click(function(){
+		$('#section9a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section10').click(function(){
+		$('#section10a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section11').click(function(){
+		$('#section11a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section12').click(function(){
+		$('#section12a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section13').click(function(){
+		$('#section13a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section14').click(function(){
+		$('#section14a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section15').click(function(){
+		$('#section15a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section16').click(function(){
+		$('#section16a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section17').click(function(){
+		$('#section17a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section18').click(function(){
+		$('#section18a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section18').click(function(){
+		$('#section18a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section19').click(function(){
+		$('#section19a').slideToggle(300);
+	})
+})
+
+$(function(){
+	$('#section20').click(function(){
+		$('#section20a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section21').click(function(){
+		$('#section21a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section22').click(function(){
+		$('#section22a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section23').click(function(){
+		$('#section23a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section24').click(function(){
+		$('#section24a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section25').click(function(){
+		$('#section25a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section26').click(function(){
+		$('#section26a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section27').click(function(){
+		$('#section27a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section28').click(function(){
+		$('#section28a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section29').click(function(){
+		$('#section29a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section30').click(function(){
+		$('#section30a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section31').click(function(){
+		$('#section31a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section32').click(function(){
+		$('#section32a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section33').click(function(){
+		$('#section33a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section34').click(function(){
+		$('#section34a').slideToggle(300);
+	})
+})
+$(function(){
+	$('#section35').click(function(){
+		$('#section35a').slideToggle(300);
 	})
 })
