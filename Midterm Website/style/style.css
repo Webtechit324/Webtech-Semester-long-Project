@@ -100,7 +100,31 @@ nav {
 	width: 100%;
 	height: auto;
 }
-
+#section1{
+	background: orangered;
+	width: 80%;
+}
+#section3{
+	background: orangered;
+	width: 80%;
+}
+#section2{
+	background: orangered;
+	width: 80%;
+}
+#section1:hover{
+	background:blue;
+}
+#section1a{
+	display:none;
+	
+}
+#section2a{
+	display:none;
+}
+#section3a{
+	display:none;
+}
 #navone {
 	background-color: darkgoldenrod;
 }

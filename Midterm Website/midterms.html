@@ -26,12 +26,11 @@
 		</header>
 		<main id="midterms">
 			<article>
-				<h2 id="htmlSection">HTML (Hyper Text Transfer Protocol)</h2>
-				<ul id="htmlPanel">
-					<li>The language for building the structure of the web pages.</li>
-				</ul>
-				<h2>HTML Versions</h2>
+				<h2 >HTML (Hypertext Markup Language)</h2>
 				<ul>
+					<li>The language for building the structure of the web pages.</li>
+					<h2 id="section1">HTML Versions</h2>
+					<ul id="section1a">
 					<li >HTML 1.0</li>
 					<ul >
 						<li>First version</li>
@@ -78,9 +77,10 @@
 							<li>January 26 2000 </li>
 						</ul>
 					</ul>
-				</ul>
-				<h2>HTML Elements</h2>
-				<ul>
+					</ul>
+				
+				<h2 id="section2">HTML Elements</h2>
+				<ul id="section2a">
 					<li>Html (root element)</li>
 					<li>Head (child)</li>
 					<ul>
@@ -126,8 +126,8 @@
 						<li>template</li>
 					</ul>
 				</ul>
-				<h2>Extensible Hypertext Markup Language</h2>
-				<ul>
+				<h2 id="section3">Extensible Hypertext Markup Language</h2>
+				<ul id="section3a">
 					<li>Reformulation of HTML in XML</li>
 					<li>Versions</li>
 					<li>XHTML 1.0</li>
@@ -171,6 +171,7 @@
 					<li>Following the specification by W3C for HTML, CSS</li>
 				</ul>
 				</ul>
+				</ul>
 			</article>
 
 			<article>
@@ -205,8 +206,7 @@
 					</ul>
 					<li>typical structure of a webpage (empty element)</li>
 					<ul>
-						<li>!DOCTYPE html html lang = “en” html element, root head start of the CHILDREN meta charset = “UTF-8” empty: no content; information of data title /title author, keyword, title of the document /head end of the CHILDREN body actual content to be seen by the user/client p a href = “link”> <a> beginning/start tag – href attribute/tag name “link” content/value </a> end tag /a /p img src = “” alt = “” !—comment -> to insert a comment /body /html
-						</li>
+						<img src="./img/doc.png">
 					</ul>
 					<li>p element (paragraph)</li>
 					<ul>
@@ -228,53 +228,7 @@
 						<li>DOM Interfaces:</li>
 					</ul>
 				</ul>
-				<h2>HTML Elements:</h2>
-				<ul>
-					<li>html (root element)</li>
-					<li>head (child)</li>
-					<ul>
-						<li>title – title</li>
-						<li>base – relative</li>
-						<li>link – different resource (eg stylesheet)</li>
-						<li>meta – other meta info (eg keywords, author tool)</li>
-						<li>style – embedding</li>
-					</ul>
-					<li>body (child)</li>
-					<ul>
-						<li>article, aside, nav, section</li>
-						<li>header, footer</li>
-						<li>main (main content)</li>
-						<li>address (contact information)</li>
-						<li>div (generic section content)</li>
-						<li>h1, h2, h3, h4, h5, h6 – sub-heading</li>
-						<li>main heading</li>
-						<li>p (paragraph)</li>
-						<li>hr (horizontal line) – hematic break: theme break</li>
-						<li>pre (preformed text) – preserved: white space, new line</li>
-						<li>blockquote: quotation (q) , citation (cite)</li>
-						<li>list: ol (ordered), ul (unordered), li (list); (eg ol start = 10></li>
-						<li>description list (dl) : dt (term), dd (actual)</li>
-						<li>figure: figcaption</li>
-						<li>a (anchor)</li>
-						<li>em, strong (emphasize), small, s (side comment), (obsolete text)</li>
-						<li>cite, q</li>
-						<li>defining instant: dfn, abbr (abbreviation)</li>
-						<li>ruby, rb, rt, rtc, rp</li>
-						<li>data, time (information/code)</li>
-						<li>code, var, samp, kbd (embedding computer code)</li>
-						<li>superscript (sup), subscript (sub)</li>
-						<li>i (italize), b (bold), u (underline) – depreciated element; 401 strict, mark</li>
-						<li>by directional text: bdi, bdo</li>
-						<li>text level division: span</li>
-						<li>break opportunity: br, wbr</li>
-						<li>news, documents edit: ins, del</li>
-						<li>table: table, caption, colgroup, col, +head, +body, +foot, tr, th, td</li>
-						<li>form: label</li>
-						<li>math: svg, canvas (eg snake game)</li>
-						<li>script, no script</li>
-						<li>template</li>
-					</ul>
-				</ul>
+				
 				<h2>HTML/XHTML Stylesheets</h2>
 				<ul>
 					<li>author styles – author of document/web development team</li>
@@ -354,8 +308,8 @@
 				</ul>
 				<h2>CSS Rule Sets (aka CSS Rules, Style Rules)</h2>
 				<ul>
-					<li>selector followed by brace-enclosed declaration block p (selector){ target particular element color: #f0o;} /* ---*/ block comment // make it invalid/ improper comment
-					</li>
+					<li>selector followed by brace-enclosed declaration block</li>
+					<img src="./img/CSSRulesSets.png">
 				</ul>
 				</ul>
 				<h2 >CSS Selector</h2>
@@ -487,7 +441,8 @@
 					<li>by specificity the name specific the higher the importance</li>
 					<ul>
 						<li>inline style – put it on the element itself</li>
-						<li>number of ID selectors(eg id = x => div # x > p# y (important) id = y #x>p (lesser important)</li>
+						<li>number of ID selectors</li>
+						
 						<li>number of class selectors, attribute selectors and pseudo-classes</li>
 						<li>number of type selectors (p, h1) and pseudo-elements (before, after) (eg body p (more specific) ; p (lesser)</li>
 					</ul>
@@ -537,13 +492,7 @@
 						<ul>
 							<li>syntactically awesome stylesheet; new SCSS</li>
 							<ul>
-								<li>eg div{ => //color:blue; p{ div p{ Color:red; color:red; }} //color: color;}</li>
-								<li>eg @mixin pm{ => div{ padding = 0; @ include pm margin = 0;} }</li>
-								<li>eg @ function twice($v){ @return 2*$v;}</li>
-								<li>eg @ for $i from 1 through 6{ H#{$i}{ font-size: 30px – ($i-1) * 3;}} || h1{ font-size: 30px;} h2{ font-size: 27px;}</li>
-								<li>nested part : font:{ family: seriff; size: twice(20(int; dimension)em);}</li>
-								<li>build in GUI (Graphic User Interface)</li>
-								<li>eg div => div p{ color:red; } p color: red</li>
+								
 							</ul>
 							<li>LESS – works on javascript; node.js</li>
 							<li>SCSS</li>
@@ -553,12 +502,14 @@
 							<li>Bootstrap</li>
 							<li>Foundation</li>
 							<li>Materialize</li>
+							
 						</ul>
 					</ul>
 				</ul>
 				<h2 >CSS Framework</h2>
 				<ul>
 					<li>bootstrap (bootstrap.com)
+					
 				</ul>
 			</article>
 			<article>
