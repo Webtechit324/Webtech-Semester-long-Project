@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<title>Java Script</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	<link href="BlogPostAssets/styles/blogPostStyle.css" rel="stylesheet" type="text/css">
+
+	<script>var __adobewebfontsappname__="dreamweaver"</script>
+	<script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+	<script src="../Finals/js/a.js"></script>
+</head>
+
+<body id="a">
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a class="page-scroll" href="index.html">Back to Homepage</a>
+        </li>
+    </ul>
+</div>
+
+<div id="mainwrapper">
+  <div id="content">
+    <div class="notOnDesktop">
+      <input type="text" placeholder="Search">
+    </div>
+    <section id="mainContent">
+    <!-- main content. use div for every topic. Example: -->
+    <div id="js">
+    <h1>Servlet</h1>
+    <h3>Servlet</h3>
+    <p>- A servlet is a Java programming language class that is used to extend the capabilities of servers that host applications accessed by means of a request-response programming model. Although servlets can respond to any type of request, they are commonly used to extend the applications hosted by web servers. For such applications, Java Servlet technology defines HTTP-specific servlet classes.</p>
+        <ul>
+            <p>- java program that sits to the server and run to the URL</p>
+            <p>- not responsible for html/read text</p>
+            <p>- read data, put it in array</p>
+            <p>- Class HttpServlet</p>
+            <ul>
+                <p>- wait for request to be process</p>
+                <p>- Interface HttpServletResponse/Request</p>
+            </ul>
+            <p>- Servlet Demo</p>
+            <ul>
+                <p>- Basic Servlet Processing</p>
+                <ul>
+                    <p>- response.setHeader(“context-type”, “text/html”)</p>
+                </ul>
+                <p>- Serving Binary Content</p>
+                <p>- Heading Request Parameters (GET)</p>
+                <ul>
+                    <p>- with inputs + get the output</p>
+                </ul>
+                <p>- Handling Request Parameters (POST)</p>
+            </ul>
+            <p>- Service Method</p>
+            <ul>
+                <p>- do xxx method (eg. doGet)</p>
+                <ul>
+                    <p>- get, post</p>
+                </ul>
+                <p>- like “public static void”</p>
+            </ul>
+            <p>- HTTPServletRequest (get)</p>
+            <ul>
+                <p>- what request is all about</p>
+                <p>- method use </p>
+                <ul>
+                    <p>- eg. getRequesr URI()</p>
+                    <p>- getRemoteUser()</p>
+                    <p>- getHeader(String name)</p>
+                    <p>- getIntHeader()</p>
+                </ul>
+                <p>- getReader() – return a buffered reader</p>
+                <p>- Reader – line oriented; String – byte oriented</p>
+            </ul>
+            <p>- HTTPServletReponse (set)</p>
+            <ul>
+                <p>- (text) – version, status code, headers, new line, tail</p>
+                <p>- eg. setStatus, setHeaders (post)</p>
+            </ul>
+            <p>- Request Dispatching</p>
+            <ul>
+                <p>- processing a request and have advantage to the other component to bedivided between you and others</p>
+            </ul>
+            <p>- Divide and Conquer Strategy</p>
+            <ul>
+                <p>- Inclusion</p>
+                <ul>
+                        <p>- dispatching method: request dispatch</p>
+                        <p>- create a servlet (E) – banner, servlet (F) – footer, servlet (N) –navigator</p>
+                        <p>- call servlet to get the output and get encoded</p>
+                        <p>- set it to the page # (consolidate) of concerns</p>
+                    </ul>
+                    <p>- Separation of concerns</p>
+                    <ul>
+                        <p>- dispatching method: forwarding</p>
+                        <p>- query the database and get the data</p>
+                        <p>- return the data</p>
+                    </ul>
+            </ul>
+            <p> get attribute: generic object</p>
+        </ul>
+    
+    <h1>JSP (Java Servlet Pages)</h1>
+    <h3>Java Servlet Pages</h3>
+        <p>- JavaServer Pages (JSP) technology provides a simplified, fast way to create dynamic web content. JSP technology enables rapid development of web-based applications that are server- and platform-independent.</p>
+        <ul>
+            <p>- html-static technology</p>
+            <ul>
+                <p>- standard action</p>
+                <p>- EL Expression</p>
+            </ul>
+            <p>- Jasper</p>
+            <ul>
+                <p>- tomcat</p>
+                IMG1
+            </ul>
+            <p>- Template Text</p>
+            <ul>
+                IMG2
+            </ul>
+            <p>- JSP Standard Actions</p>
+            <ul>
+                IMG3
+            </ul>
+        <p>- Using JSP Document (XML)</p>
+        <ul>
+            IMG4    
+        </ul>
+        <p>- Expression language (EL) Expression (starts with $)</p>
+            <ul>
+                IMG5
+            </ul>
+        <p>- Scriplet Scriplet</p>
+            <ul>
+                IMG6
+            </ul>
+        <p>- Scriplet Expressions </p>
+            <ul>
+                IMG7
+            </ul>
+        <p>- Scriplet Declaration </p>
+            <ul>
+                IMG8
+            </ul>
+        <p>- JSTL (JavaServer Pages Standard Tag Library)</p>
+            <ul>
+                IMG9
+            </ul>
+        </ul>
+    <h3>Session Handling</h3>
+        <ul>
+            <p>- stateless communication – simple to implement</p>
+            <p>- wait for request then send the response then stop</p>
+            <p>- (apache server) administrative purpose – with access log</p>
+            <p>- Solutions:</p>
+            <ul>
+                <p>- modify http but standard</p>
+                <p>- extension called cookie</p>
+                <ul>
+                    <p>- small text file</p>
+                    <p>- associate with url of the application</p>
+                    <p>- to identify the client</p>
+                </ul>
+            </ul>
+        </ul>
+        <h3>Cookie (session handling)</h3>
+        <ul>
+            <p>- not persistent</p>
+            <ul>
+                <p>- exist when browser is up; once close the cookie will be gone</p>
+                <p>- known for a time-out mechanism</p>
+            </ul>
+        </ul>
+        <h3>Install Wamp</h3>
+        <ul>
+            IMG10
+        </ul>
+        <h3>Past: Procedural Language</h3>
+        <ul>
+            IMG11
+        </ul>
+    </div>
+    </section>
+    
+    <section id="sidebar">
+    <!--side content. -->
+        <div id="adimage"><img src="../Finals/img/image.png" alt=""/></div>
+        <!-- navigation -->
+        <nav>
+        <ul>
+          <h3> Java Script </h3>
+          <li><a href="#js" title="Link">Java Script</a></li>
+		  <h3> AJAX </h3>
+          <li><a href="#" title="Link"></a></li>
+        </ul>
+      </nav>
+    </section>
+     <button onclick="topFunction()" id="myBtn" title="Back to the Top">Back to the Top</button>
+    </div>
+    <div id="footerbar"></div>
+  </div>
+</body>
+</html>
+    
