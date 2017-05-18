@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<title>Hypertext Transfer Protocol</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	<link href="BlogPostAssets/styles/blogPostStyle.css" rel="stylesheet" type="text/css">
+
+	<script>var __adobewebfontsappname__="dreamweaver"</script>
+	<script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+	<script src="../Finals/js/a.js"></script>
+</head>
+
+<body id="a">
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a class="page-scroll" href="index.html">Back to Homepage</a>
+        </li>
+    </ul>
+</div>
+
+<div id="mainwrapper">
+  <div id="content">
+    <div class="notOnDesktop">
+      <input type="text" placeholder="Search">
+    </div>
+    <section id="mainContent">
+    <!-- main content. use div for every topic. Example: -->
+    <div id="one">
+    <h1>Hyper Text Transfer Protocol</h1>
+    <p>- Application layer used primarily to retrieve hypertext (on hypermedia) documents and reources on the World Wide Web.</p>
+    <p>- Jointly developed by the W3C and the IETF. </p>
+    <h3>Version History</h3>
+    <p>- HTTP 0.9 (1991)</p>
+    <p>- HTTP 1.0 (Request For Comments (RFC) 1945, May 1996)</p>
+    <p>- HTTP 1.1 (RFC 2068, Jan 1997) (RFC 2616, Jun 1999) (RFC 7230-7235, Jun 2014)</p>
+    <p>- HTTP 2.0 (RFC 7540, May 2015)</p>
+    </div>
+    <div id="two">
+        <h1>Hyper Text Transfer Protocol (HTTP) unsecure</h1>
+        <p>Based on a client-server architecture.
+        <p>Client, aka User Agents (UA)</p>
+        <p>- Web Browser, Web Crawlers/Spiders, Other End USer Tools and Applications</p>
+        <p>Server</p>
+        <p>- Origin Server, Proxy Server (ex. Authentication Server), Gateways, Tunnels</p>
+    </div>
+
+    <div id="three">
+        <h1>HTTP Resource Addressing</h1>
+        <p>Identifies using Uniform Resource Identifer (URI; RFC 3986) or more specifically, HTTP URIs.</p>
+        <h3>two Subtypes of URI:</h3>
+        <p>Uniform Resource Name (URN) - ex. International Standard Book Number (ISBN), Universal Product Code (UPC)
+        Uniform Resource Locator (URL) - ex. google.com</p>
+        <h3>Authority</h3>
+        <p>User information/authentication credentials (deprecated).
+        Host - domain name (resolved to an ip address using dns) of the server where the resource resides (or will be created).</p>
+        <p>Port Number</p>
+        <h3>Path to Resource (resolved relative to the document root on the server)</h3>
+        <p>Fragment Identifier - starts with a hashtag (#).</p>
+    </div>
+    <div id="four">
+        <h1>Protocol</h1>
+        <p>A set of rules that needs to be followed when messages are communicated in the Internet.</p>
+    </div>
+    <div id="five">
+        <h1>HTTP Response Message</h1>
+        <h3>Status Line</h3>
+            <p>The first line of the response message. It start with the protocol version and the numeric status code with the description.</p>
+        <h3>Response Header</h3>
+            <p>This allows the server to pass additional messages that cannot be placed in the Status Line.</p>
+        <h3>Message Body</h3>
+            <p>The message body is used to carry the entity-body associated with the request or response. It only differs from the entity-body when transfer coding has been applied.</p>
+    </div>
+    <div id="six">
+        <h1>HTTP Request Methods</h1>
+        <h3>GET</h3>
+        <p>Request data from a specified source.
+        HEAD</p>
+        <p>Same as GET but returns only HTTP headers and no document body.</p>
+        <h3>POST</h3>
+        <p>Submit data to be processed to a specified resources.</p>
+        <h3>OPTIONS</h3>
+        <p>OPTIONS method represents a request for information about the communication options available on the request/response chain identified by the Request-URI.</p>
+        <h3>TRACE</h3>
+        <p>TRACE method is used to invoke a remote, application-layer loop- back of the request message..
+        <h3>PUT</h3>
+        <p>Uploads a representation of the specified URI.
+        <h3>DELETE</h3>
+        <p>Deletes the specified resource
+        <h3>CONNECT</h3>
+        <p>Converts the request connection to a transparent TCP/IP tunnel
+        <h3>Safe Methods:</h3>
+        <p>Get, Head, Options, Trace
+        Not Safe Methods:
+        Post, Put, Delete
+        <h3>Idempotent:</h3>
+        <p>Get, Head, Put, Delete, Options, Trace
+    </div>
+    <div id="seven">
+        <h1>HTTP Message Headers</h1>
+        <h3>General Header Fields</h3>
+        <p>This header fields have general applicability for both request and response messages.</p>
+        <p>- Connection
+        - Data
+        - Pragma
+        - Transfer encoding
+        - Trailer
+        - Upgrade
+        - Via
+        - Warning</p>
+        <h3>Request Header Fields</h3>
+        <p>The request-header fields allow the client to pass additional information about the request, and about the client itself, to the server. These fields act as request modifiers.</p>
+        <p>- Accept language
+        - Accept encoding
+        - Authorization
+        - Proxy
+        - Expect
+        - From
+        - Host</p>
+        <h3>Response Header Fields</h3>
+        <p>The response-header fields allow the server to pass additional information about the response which cannot be placed in the Status- Line. These header fields give information about the server and about further access to the resource identified by the Request-URI.</p>
+        <p>- Accept - range
+        - Age
+        - ETag
+        - Location
+        - Proxy - authenticate
+        - WWW - authenticate
+        - Retry - after
+        - Server
+        - Vary</p>
+        <h3>Entity Header Fields</h3>
+        <p>This header fields define meta information about the entity-body or, if no body is present, about the resource identified by the request.</p>
+        <p>- Allow
+        - Content - encoding
+        - Content - language
+        - Content - length
+        - Content - location
+        - Content - MDS
+        - Content - range
+        - Content - type
+        - Expires
+        - Last - modified</p>
+        <h3>Conditional Header</h3>
+        <p>- Request - if-non-match
+        - Condition - if-modified.since
+        - If - ranges
+        - Max - forward
+        - Trailer encoding
+        - User - agent
+        Extended Headers
+        - Upgrade
+        - Do not track (DNT)</p>
+    </div>
+    <div id="eight">
+        <h1>HTTP Status Codes</h1>
+        <h3>Informational(1xx)</h3>
+            <p>100 Continue</p>
+            <p>101 Switching Protocols</p>
+        <h3>Success(2xx)</h3>
+            <p>200 OK</p>
+            <p>202 Accepted</p>
+            <p>203 Non-authorative Information</p>
+            <p>204 No Content</p>
+            <p>205 Reset Content</p>
+            <p>206 Partial Content</p>
+        <h3>Redirection(3xx)</h3>
+            <p>300 Multiple Choices</p>
+            <p>301 Moved Permanently</p>
+            <p>302 Found</p>
+            <p>303 See Other</p>
+            <p>304 Not Modified</p>
+            <p>305 Use Proxy</p>
+            <p>306 Switch Proxy</p>
+            <p>307 Temporary Redirect</p>
+        <h3>Client Error(4xx)</h3>
+            <p>400 Bad Request
+            <p>401 Unauthorized
+            <p>402 Payment Required
+            <p>403 Forbidden
+            <p>404 Not Found
+            <p>405 Method not Allowed
+            <p>406 Not Acceptable
+            <p>407 Proxy Authentication Required
+            <p>408 Request Timeout
+            <p>409 Conflict
+            <p>410 Gone
+            <p>411 Length Required
+            <p>412 Precondition Failed
+            <p>413 Request Entity Too Large
+            <p>414 Request-URI Too Long
+            <p>415 Unsupported Media Type
+            <p>416 Request Range Not Satisfiable
+            <p>417 Expectation Failed
+            426 Upgrade Required
+        <h3>Server Error(5xx)</h3>
+            <p>500 Internal Server Error</p>
+            <p>501 Not Implemented</p>
+            <p>502 Bad Gateway</p>
+            <p>503 Service Unavailable</p>
+            <p>504 Gateway Timeout</p>
+            <p>505 HTTP Version Not Supported</p>  
+    </div>
+    </section>
+    
+    <section id="sidebar">
+    <!--side content. -->
+        <div id="adimage"><img src="../Finals/img/image.png" alt=""/></div>
+        <!-- navigation -->
+        <nav>
+        <ul>
+          <h3> Hypertext Transfer Protocol </h3>
+          <li><a href="#one" title="Link">Hypertext Transfer Protocol</a></li>
+		  <li><a href="#two" title="Link">HTTP unsecure</a></li>
+          <li><a href="#three" title="Link">HTTP Resource Addressing</a></li>
+          <li><a href="#four" title="Link">Protocol</a></li>
+          <li><a href="#five" title="Link">HTTP Response Message</a></li>
+          <li><a href="#six" title="Link">HTTP Request Methods</a></li>
+          <li><a href="#seven" title="Link">HTTP Message Headers</a></li>
+          <li><a href="#eight" title="Link">HTTP Status Codes</a></li>
+        </ul>
+      </nav>
+    </section>
+     <button onclick="topFunction()" id="myBtn" title="Back to the Top">Back to the Top</button>
+    </div>
+    <div id="footerbar"></div>
+  </div>
+</body>
+</html>
+    

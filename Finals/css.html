@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<title>CSS</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	<link href="BlogPostAssets/styles/blogPostStyle.css" rel="stylesheet" type="text/css">
+
+	<script>var __adobewebfontsappname__="dreamweaver"</script>
+	<script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+	<script src="../Finals/js/a.js"></script>
+</head>
+
+<body id="a">
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a class="page-scroll" href="index.html">Back to Homepage</a>
+        </li>
+    </ul>
+</div>
+
+<div id="mainwrapper">
+  <div id="content">
+    <div class="notOnDesktop">
+      <input type="text" placeholder="Search">
+    </div>
+    <section id="mainContent">
+    <!-- main content. use div for every topic. Example: -->
+    <div id="one">
+    <h1>Cascading Style Sheet</h1>
+    <p>- structural markup documents. </p>
+    <p>- language used to specify the presentation aspects (eg layout and formatting) of structurally marked up documents</p>
+    <p>- developed by <span class="dropt" title="Hakon Wium Lie"> Hakon Wium Lie <span><img src="../Finals/img/hakonlie.jpg"/>
+  		</span></span> (CHSS: HTML Cascading Style Sheet) and <span class="dropt" title="Bert Bos"> Bert Bos <span><img src="../Finals/img/bertbos.jpg"/> </span></span> (SSP: Stream-based Style Sheet Proposal).</p>
+    </div>
+    <div id="two">
+    <h1>CSS Version</h1>
+    <h3>Monolife</h3>
+    <p>- everything is covered in specs</p>
+    <h3>CSS 1</h3>
+    <p>- December 17 1996 revised April 11 2008</p>
+    <h3>CSS 2.1</h3>
+    <p>- June 7 2011</p>
+    <h3>CSS 3</h3>
+    <p>- recommended; individual document defining each module</p>
+    </div>
+    <div id="three">
+    	<h1>CSS Statements</h1>
+    	<h3>At(@)-Rules</h3>
+    	<p>- @charset</p>
+    	<p>- @namespace</p>
+    	<p>- @import</p>
+    	<p>- @document - specific page or with given url or domain</p>
+    	<p>- @fontface - downloadable files</p>
+    	<p>- @keyframe - animation</p>
+    	<p>- @media - responsive design</p>
+    	<p>- @page</p>
+    </div>
+    <div id="four">
+    	<h1>CSS Rule Sets</h1>
+		<p>- aka CSS Rules, Style Rules</p>
+   		<p>- selectro followed by brace-enclosed declaration block</p>
+   		<p>- Example of <span class="dropt" title="CSS Rule Set"> CSS Rule Set <span><img src="../Finals/img/CSSRulesSets.PNG"/></span></span></p>
+    </div>
+    <div id="five">
+    	<h1>CSS Selector</h1>
+    	<h3>Selector</h3>
+    	<p>- elements in the document tree are matched</p>
+    	<p>- Example: body ail# x>p-y[title] + span: +-before</p>
+    	<p>- condition in a CSS rule: match elements called the subject of the selector</p>
+    	<h3>Selector Syntax</h3>
+    	<p>- one or more sequences of simple selector</p>
+    	<p>- Example: body(simple) p.xyz (selector sequence) + h1[title]::before(pseudo element)</p>
+    	<h3>Sequence of Simple Selector</h3>
+    	<p>- chain of simple selector not separated by ;</p>
+    	<p>- Example: h1,h2,h3 - group of selector</p>
+    	<h3>Simple Selector</h3>
+    	<p>- type selector - name of elements in html</p>
+    	<p>- universal selector - represented by *{} (target everything)</p>
+    	<p>- attribute selector - Example: p[attr]class='x y' and <span class="dropt" title="Attribute Selector"> Attribute Selector <span><img src="../Finals/img/attribute.jpg"/></span></span></p>
+    	<p>- class selector - Example: class = 'x y' -> p.x</p>
+    	<p>- id selector - Example: id = 'id' -> #id</p>
+    	<p>- pseudo class</p>
+    	<p>- dynamic pseudo-class - Example: <span class="dropt" title="Link"> Link Pseudo-Class <span><img src="../Finals/img/link.jpg"/></span></span>, <span class="dropt" title="User Action"> User Action Pseudo-Class <span><img src="../Finals/img/user.jpg"/></span></span>, <span class="dropt" title="Target"> Target Pseudo-Class <span><img src="../Finals/img/target.jpg"/></span></span>, <span class="dropt" title="Language"> Language Pseudo-Class <span><img src="../Finals/img/language.jpg"/></span></span>, <span class="dropt" title="UI Element"> UI Element States Pseudo-Class <span><img src="../Finals/img/uielement.jpg"/></span></span>, <span class="dropt" title="Structural"> Structural Pseudo-Class <span><img src="../Finals/img/structural.jpg"/></span></span>, <span class="dropt" title="Negation"> Negation Pseudo-Class <span><img src="../Finals/img/negation.jpg"/></span></span> and <span class="dropt" title="Combinators"> Combinators <span><img src="../Finals/img/combinator.jpg"/></span></span></p>
+    </div>
+    <div id="six">
+    	<h1>CSS Rule Precedence</h1>
+    	<h3>By Origin and Importance</h3>
+    	<p>- user agent important declarations</p>
+    	<p>- user important declarations - override the author</p>
+    	<p>- author important declarations</p>
+    	<p>- author normal declarations</p>
+    	<p>- user normal declarations</p>
+    	<p>- user agent normal declarations- Example: color: red; important;</p>
+    	<p>- transition declaration - change the value of the property from one to another</p>
+    	<p>- import override declaration - use javascript to import</p>
+    	<p>- animation declarations</p>
+    	<h3>By Specificity</h3>
+    	<p>- the name specific the higher the importance</p>
+    	<p>- inline style - put it on the element itself</p>
+    	<p>- Example of <span class="dropt" title="ID Selector"> Number of ID Selectors <span><img src="../Finals/img/IDSelector.PNG"/></span></span></p>
+    	<p>- number of class selector, attribute selectors and pseudo-classes</p>
+    	<p>- number of type selectors (p, h1) and pseudo-elements (before, after) - Example of <span class="dropt" title="Type Selector"> Type Selector <span><img src="../Finals/img/type.jpg"/></span></span></p>
+    	<h3> By Order</h3>
+    </div>
+    <div id= "seven">
+    	<h1>CSS Declarations</h1>
+    	<h3>Properties</h3>
+    	<p>- shorthand properties</p>
+    	<p>- vendor - specific extensions aka vendor prefixes (experimental)</p>
+    	<h3>Values</h3>
+    	<p>- keywords, numbers, dimensions (x) - integers and reals in decimal notation</p>
+    	<p>- dimensions - Examples of <span class="dropt" title="Dimensions"> Dimensions <span><img src="../Finals/img/dimensions.jpg"/></span></span></p>
+    	<p>- percentage - Example: 10%</p>
+    	<p>- URLs and URIs - Example: url(______), hsl() (hue, saturation, lightness)</p>
+    	<p>- color - Example: red; #rgb; #rgba - 0(transparent)->1; hsl(0,100%)-> (100-white; 0-black; 50-normal)</p>
+    	<p>- strings</p>
+    	<p>- functions - Example: calc(), attr(), counter(), counters(), linear-gradient()</p>
+    	<p>- background-color: red; (inherit (inheritance); initial, unset (not inheritance))</p>
+    </div>
+    <div id="eight">
+    	<h1>CSS Preprocessors and Framework</h1>
+    	<p>- extend the syntactical capability of CSS</p>
+    	<h3>SASS</h3>
+    	<p>- preprocessor; convert it to CSS</p>
+    	<p>- syntactically awesome stylesheet; new SCSS</p>
+    	<p>- Example of <span class="dropt" title="SASS"> SASS in SCSS <span><img src="../Finals/img/SASS.PNG"/></span></span></p>
+    	<p>- Example in <span class="dropt" title="Nested"> Nested Part <span><img src="../Finals/img/nestedpart.png"/></span></span></p>
+    	<h3>LESS</h3>
+    	<p>- works on javascript; node.js</p>
+    	<h3>SCSS</h3>
+    	<h3>Stylus</h3>
+    	<h3>PostCSS</h3>
+    	<h3>960 Grid Systems</h3>
+    	<h3>Bootstrap</h3>
+    	<p>- Example of <span class="dropt" title="Bootstrap"> Bootstrap <span><img src="../Finals/img/bootstrap.png"/></span></span></p>
+    	<h3>Foundation</h3>
+    	<h3>Materialize</h3>
+    	<p>- formatting for tabs and tables</p>
+    	<p>- introduced by <span class="dropt" title="Google"> Google <span><img src="../Finals/img/google.png"/></span></span></p>
+    	<p>- Example of <span class="dropt" title="Materialize"> Materialize <span><img src="../Finals/img/Materialize.PNG"/></span></span></p>
+    </div>
+    </section>
+    
+    <section id="sidebar">
+    <!--side content. -->
+        <div id="adimage"><img src="../Finals/img/image.png" alt=""/></div>
+        <!-- navigation -->
+        <nav>
+        <ul>
+          <h3> CSS </h3>
+          <li><a href="#one" title="Link">CSS</a></li>
+          <li><a href="#two" title="Link">CSS Version</a></li>
+     	  <li><a href="#three" title="Link">CSS Statements</a></li>
+     	  <li><a href="#four" title="Link">CSS Rule Sets</a></li>
+     	  <li><a href="#five" title="Link">CSS Selectors</a></li>
+     	  <li><a href="#six" title="Link">CSS Rule Precedence</a></li>
+     	  <li><a href="#seven" title="Link">CSS Declaration</a></li>
+     	  <li><a href="#eight" title="Link">CSS Preprocessor and CSS Framework</a></li>
+        </ul>
+      </nav>
+    </section>
+     <button onclick="topFunction()" id="myBtn" title="Back to the Top">Back to the Top</button>
+    </div>
+    <div id="footerbar"></div>
+  </div>
+</body>
+</html>
+    
