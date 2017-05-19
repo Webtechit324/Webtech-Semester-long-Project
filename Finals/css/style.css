@@ -846,8 +846,8 @@ body {
 #acronym{
 	color: white;
 	font-family: 'Tangerine', serif;
-    font-size: 48px;
 }
 #acronym li{
 	list-style: none;
+	font-size: 30px;
 }
