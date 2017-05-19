@@ -851,3 +851,17 @@ body {
 	list-style: none;
 	font-size: 30px;
 }
+input{
+	margin-left: 40px;
+}
+input[type=text] {
+    width: 200px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	font-size: 18px;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
