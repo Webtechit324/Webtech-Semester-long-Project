@@ -8,7 +8,8 @@
     <meta name="author" content="">
 <title>Hypertext Transfer Protocol</title>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -43,131 +44,164 @@
     <section id="mainContent">
     <!-- main content. use div for every topic. Example: -->
     <div id="one">
-    <h1>Hyper Text Transfer Protocol</h1>
-    <p>- Application layer used primarily to retrieve hypertext (on hypermedia) documents and reources on the World Wide Web.</p>
-    <p>- Jointly developed by the W3C and the IETF. </p>
-    <h3>Version History</h3>
-    <p>- HTTP 0.9 (1991)</p>
-    <p>- HTTP 1.0 (Request For Comments (RFC) 1945, May 1996)</p>
-    <p>- HTTP 1.1 (RFC 2068, Jan 1997) (RFC 2616, Jun 1999) (RFC 7230-7235, Jun 2014)</p>
-    <p>- HTTP 2.0 (RFC 7540, May 2015)</p>
+    <h1>Hypertext Transfer Protocol</h1>
+    <p>- application layer used primarily to retrieve hypertext (on hypermedia) documents and reources on the World Wide Web.</p>
+    <p>- jointly developed by the W3C and the IETF. </p>
     </div>
     <div id="two">
-        <h1>Hyper Text Transfer Protocol (HTTP) unsecure</h1>
-        <p>Based on a client-server architecture.
-        <p>Client, aka User Agents (UA)</p>
+    <h1>Version History</h1>
+    <h3>HTTP 0.9 (1991)</h3>
+    <p>- Phases: Connection -> Request -> Response -> Disconnection (4 steps)</p>
+	<h3>HTTP 1.0</h3>
+    <p>- Request For Comments (RFC) - 1945, May 1996</p>
+    <h3>HTTP 1.1</h3>
+	<p>- RFC 2068 - Jan 1997</p>
+	<p>- RFC 2616 - Jun 1999</p>
+    <p>- RFC 7230-7235 -  Jun 2014</p>
+    <h3>HTTP 2.0</h3>
+    <p>- RFC 7540 - May 2015</p>
+    </div>
+    <div id="three">
+        <h1>Hyper Text Transfer Protocol (HTTP) Unsecure</h1>
+		<h3>Based on a client-server architecture.</h3>
+        <h3>Client, aka User Agents (UA)</h3>
         <p>- Web Browser, Web Crawlers/Spiders, Other End USer Tools and Applications</p>
-        <p>Server</p>
+        <h3>Server</h3>
         <p>- Origin Server, Proxy Server (ex. Authentication Server), Gateways, Tunnels</p>
     </div>
-
-    <div id="three">
+    <div id="four">
         <h1>HTTP Resource Addressing</h1>
         <p>Identifies using Uniform Resource Identifer (URI; RFC 3986) or more specifically, HTTP URIs.</p>
-        <h3>two Subtypes of URI:</h3>
-        <p>Uniform Resource Name (URN) - ex. International Standard Book Number (ISBN), Universal Product Code (UPC)
-        Uniform Resource Locator (URL) - ex. google.com</p>
+        <h3>Two Subtypes of URI:</h3>
+        <p>- Uniform Resource Name (URN) - Example: International Standard Book Number (ISBN), Universal Product Code (UPC)</p>
+        <p>- Uniform Resource Locator (URL) - Example: google.com</p>
         <h3>Authority</h3>
-        <p>User information/authentication credentials (deprecated).
-        Host - domain name (resolved to an ip address using dns) of the server where the resource resides (or will be created).</p>
-        <p>Port Number</p>
+		<p>- User information/authentication credentials (deprecated)</p>
+        <p>- Host - domain name (resolved to an ip address using dns) of the server where the resource resides (or will be created).</p>
+        <p>- Port Number</p>
         <h3>Path to Resource (resolved relative to the document root on the server)</h3>
-        <p>Fragment Identifier - starts with a hashtag (#).</p>
-    </div>
-    <div id="four">
-        <h1>Protocol</h1>
-        <p>A set of rules that needs to be followed when messages are communicated in the Internet.</p>
+        <p>- Fragment Identifier - starts with a hashtag (#).</p>
     </div>
     <div id="five">
-        <h1>HTTP Response Message</h1>
-        <h3>Status Line</h3>
-            <p>The first line of the response message. It start with the protocol version and the numeric status code with the description.</p>
-        <h3>Response Header</h3>
-            <p>This allows the server to pass additional messages that cannot be placed in the Status Line.</p>
-        <h3>Message Body</h3>
-            <p>The message body is used to carry the entity-body associated with the request or response. It only differs from the entity-body when transfer coding has been applied.</p>
+        <h1>Protocol</h1>
+        <p>- a set of rules that needs to be followed when messages are communicated in the Internet.</p>
+        <h3>Examples:</h3>
+        <p>- HTTP (Hypertext Transfer Protocol) - a protocol used for transferring messages over the Internet.</p>
+        <p>- HTTPs (Secured Hypertext Transfer Protocol) - a protocol with a combination of HTTP and SSL or Secure Sockets Layer which makes the sharing of information more secure.</p>
     </div>
     <div id="six">
-        <h1>HTTP Request Methods</h1>
-        <h3>GET</h3>
-        <p>Request data from a specified source.
-        HEAD</p>
-        <p>Same as GET but returns only HTTP headers and no document body.</p>
-        <h3>POST</h3>
-        <p>Submit data to be processed to a specified resources.</p>
-        <h3>OPTIONS</h3>
-        <p>OPTIONS method represents a request for information about the communication options available on the request/response chain identified by the Request-URI.</p>
-        <h3>TRACE</h3>
-        <p>TRACE method is used to invoke a remote, application-layer loop- back of the request message..
-        <h3>PUT</h3>
-        <p>Uploads a representation of the specified URI.
-        <h3>DELETE</h3>
-        <p>Deletes the specified resource
-        <h3>CONNECT</h3>
-        <p>Converts the request connection to a transparent TCP/IP tunnel
-        <h3>Safe Methods:</h3>
-        <p>Get, Head, Options, Trace
-        Not Safe Methods:
-        Post, Put, Delete
-        <h3>Idempotent:</h3>
-        <p>Get, Head, Put, Delete, Options, Trace
+        <h1>HTTP Response Message</h1>
+        <h3>Status Line</h3>
+            <p>- The first line of the response message. It start with the protocol version and the numeric status code with the description.</p>
+        <h3>Response Header</h3>
+            <p>- This allows the server to pass additional messages that cannot be placed in the Status Line.</p>
+        <h3>Message Body</h3>
+            <p>- The message body is used to carry the entity-body associated with the request or response. It only differs from the entity-body when transfer coding has been applied.</p>
     </div>
     <div id="seven">
+    	<h1>HTTP Request Message</h1>
+    	<p>- request line (carriage return line feed) - terminated line consisting)</p>
+    	<h3>Methods</h3>
+    	<p>- Standard Method</p>
+    	<ul>
+    		<p>- safe methods: get(retrieve), head, options, trace, connect</p>
+    		<p>- modify server/not safe: post, put, delete</p>
+    		<p>- idempotent: get, head, put, delete, options, trace</p>
+    	</ul>
+    	<p>- Extension Method</p>
+    	<ul>
+    		<p>- WebDAV (RFC 4918) - PROPFIND, PROPPATCH, MKCOL (make a collection/create folder), COPY, MOVE, LOCK, UNLOCK</p>
+    		<p>- Options - query what the server can do</p>
+    		<p>- Trace - request a loop-back of the request message; typically used for testing/diagnostic of the request/response chain; to know where you committed error (Example: 34 - length of the section (hex 1 byte) Trace/index.html HTTP/1.1 Host: www.webtek.org (actual data))</p>
+    		<p>- Connect - establishment of a tunnel to the destination origin servers and if successful, thereafter restrict its behavior to blind-forwarding of pockets in both directions, until the tunnel is closed.</p>
+    		<p>- cacheable method</p>
+    		<p>- safe method</p>
+    		<p>- idempotent method</p>
+    	</ul>
+    	<h3>Request URI</h3>
+    	<p>- RFC 2616 - 4236 Update Required</p>
+    </div>
+    <div id="eight">
+        <h1>HTTP Request Methods</h1>
+        <h3>GET</h3>
+		<p>- Request data from a specified source.</p>
+		<h3>HEAD</h3>
+        <p>- Same as GET but returns only HTTP headers and no document body.</p>
+        <h3>POST</h3>
+        <p>- Submit data to be processed to a specified resources.</p>
+        <h3>OPTIONS</h3>
+        <p>- OPTIONS method represents a request for information about the communication options available on the request/response chain identified by the Request-URI.</p>
+        <h3>TRACE</h3>
+        <p>- TRACE method is used to invoke a remote, application-layer loop- back of the request message.</p>
+        <h3>PUT</h3>
+		<p>- Uploads a representation of the specified URI.</p>
+        <h3>DELETE</h3>
+		<p>- Deletes the specified resource.</p>
+        <h3>CONNECT</h3>
+		<p>- Converts the request connection to a transparent TCP/IP tunnel</p>
+        <h3>Safe Methods:</h3>
+		<p>- Get, Head, Options, Trace</p>
+		<h3>Not Safe Methods:</h3>
+		<p>- Post, Put, Delete</p>
+        <h3>Idempotent:</h3>
+		<p>Get, Head, Put, Delete, Options, Trace</p>
+    </div>
+    <div id="nine">
         <h1>HTTP Message Headers</h1>
         <h3>General Header Fields</h3>
         <p>This header fields have general applicability for both request and response messages.</p>
-        <p>- Connection
-        - Data
-        - Pragma
-        - Transfer encoding
-        - Trailer
-        - Upgrade
-        - Via
-        - Warning</p>
+		<p>- Connection </p>
+		<p>- Data </p>
+		<p>- Pragma</p>
+	  	<p>- Transfer encoding</p>
+		<p>- Trailer</p>
+		<p>- Upgrade</p>
+		<p>- Via</p>
+        <p>- Warning</p>
         <h3>Request Header Fields</h3>
         <p>The request-header fields allow the client to pass additional information about the request, and about the client itself, to the server. These fields act as request modifiers.</p>
-        <p>- Accept language
-        - Accept encoding
-        - Authorization
-        - Proxy
-        - Expect
-        - From
-        - Host</p>
+		<p>- Accept language</p>
+		<p>- Accept encoding</p>
+		<p>- Authorization</p>
+		<p>- Proxy</p>
+		<p>- Expect</p>
+		<p>- From</p>
+        <p>- Host</p>
         <h3>Response Header Fields</h3>
         <p>The response-header fields allow the server to pass additional information about the response which cannot be placed in the Status- Line. These header fields give information about the server and about further access to the resource identified by the Request-URI.</p>
-        <p>- Accept - range
-        - Age
-        - ETag
-        - Location
-        - Proxy - authenticate
-        - WWW - authenticate
-        - Retry - after
-        - Server
-        - Vary</p>
+		<p>- Accept - range</p>
+		<p>- Age </p>
+		<p>- ETag</p>
+		<p>- Location</p>
+		<p>- Proxy - authenticate</p>
+		<p>- WWW - authenticate</p>
+		<p>- Retry - after</p>
+		<p>- Server</p>
+        <p>- Vary</p>
         <h3>Entity Header Fields</h3>
         <p>This header fields define meta information about the entity-body or, if no body is present, about the resource identified by the request.</p>
-        <p>- Allow
-        - Content - encoding
-        - Content - language
-        - Content - length
-        - Content - location
-        - Content - MDS
-        - Content - range
-        - Content - type
-        - Expires
-        - Last - modified</p>
+        <p>- Allow</p>
+        <p>- Content - encoding</p>
+        <p>- Content - language</p>
+        <p>- Content - length</p>
+        <p>- Content - location</p>
+        <p>- Content - MDS</p>
+        <p>- Content - range</p>
+        <p>- Content - type</p>
+        <p>- Expires</p>
+        <p>- Last - modified</p>
         <h3>Conditional Header</h3>
-        <p>- Request - if-non-match
-        - Condition - if-modified.since
-        - If - ranges
-        - Max - forward
-        - Trailer encoding
-        - User - agent
-        Extended Headers
-        - Upgrade
-        - Do not track (DNT)</p>
+        <p>- Request - if-non-match</p>
+        <p>- Condition - if-modified.since</p>
+        <p>- If - ranges</p>
+        <p>- Max - forward</p>
+        <p>- Trailer encoding</p>
+		<p>- User - agent</p>
+		<h3>Extended Headers</h3>
+		<p>- Upgrade</p>
+        <p>- Do not track (DNT)</p>
     </div>
-    <div id="eight">
+    <div id="ten">
         <h1>HTTP Status Codes</h1>
         <h3>Informational(1xx)</h3>
             <p>100 Continue</p>
@@ -189,25 +223,25 @@
             <p>306 Switch Proxy</p>
             <p>307 Temporary Redirect</p>
         <h3>Client Error(4xx)</h3>
-            <p>400 Bad Request
-            <p>401 Unauthorized
-            <p>402 Payment Required
-            <p>403 Forbidden
-            <p>404 Not Found
-            <p>405 Method not Allowed
-            <p>406 Not Acceptable
-            <p>407 Proxy Authentication Required
-            <p>408 Request Timeout
-            <p>409 Conflict
-            <p>410 Gone
-            <p>411 Length Required
-            <p>412 Precondition Failed
-            <p>413 Request Entity Too Large
-            <p>414 Request-URI Too Long
-            <p>415 Unsupported Media Type
-            <p>416 Request Range Not Satisfiable
-            <p>417 Expectation Failed
-            426 Upgrade Required
+            <p>400 Bad Request</p>
+            <p>401 Unauthorized</p>
+            <p>402 Payment Required</p>
+            <p>403 Forbidden</p>
+            <p>404 Not Found</p>
+            <p>405 Method not Allowed</p>
+            <p>406 Not Acceptable</p>
+            <p>407 Proxy Authentication Required</p>
+            <p>408 Request Timeout</p>
+            <p>409 Conflict</p>
+            <p>410 Gone</p>
+            <p>411 Length Required</p>
+            <p>412 Precondition Failed</p>
+            <p>413 Request Entity Too Large</p>
+            <p>414 Request-URI Too Long</p>
+            <p>415 Unsupported Media Type</p>
+            <p>416 Request Range Not Satisfiable</p>
+            <p>417 Expectation Failed</p>
+            <p>426 Upgrade Required</p>
         <h3>Server Error(5xx)</h3>
             <p>500 Internal Server Error</p>
             <p>501 Not Implemented</p>
@@ -226,13 +260,15 @@
         <ul>
           <h3> Hypertext Transfer Protocol </h3>
           <li><a href="#one" title="Link">Hypertext Transfer Protocol</a></li>
-		  <li><a href="#two" title="Link">HTTP unsecure</a></li>
-          <li><a href="#three" title="Link">HTTP Resource Addressing</a></li>
-          <li><a href="#four" title="Link">Protocol</a></li>
-          <li><a href="#five" title="Link">HTTP Response Message</a></li>
-          <li><a href="#six" title="Link">HTTP Request Methods</a></li>
-          <li><a href="#seven" title="Link">HTTP Message Headers</a></li>
-          <li><a href="#eight" title="Link">HTTP Status Codes</a></li>
+          <li><a href="#two" title="Link">HTTP Version</a></li>
+		  <li><a href="#three" title="Link">HTTP Unsecure</a></li>
+          <li><a href="#four" title="Link">HTTP Resource Addressing</a></li>
+          <li><a href="#five" title="Link">Protocol</a></li>
+          <li><a href="#six" title="Link">HTTP Response Message</a></li>
+          <li><a href="#seven" title="Link">HTTP Request Message</a></li>
+          <li><a href="#eight" title="Link">HTTP Request Methods</a></li>
+          <li><a href="#nine" title="Link">HTTP Message Headers</a></li>
+          <li><a href="#ten" title="Link">HTTP Status Codes</a></li>
         </ul>
       </nav>
     </section>
@@ -242,4 +278,3 @@
   </div>
 </body>
 </html>
-    

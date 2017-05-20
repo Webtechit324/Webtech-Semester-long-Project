@@ -13,7 +13,8 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -61,6 +62,7 @@
                     <li>
                         <a class="page-scroll" href="#about">Finals</a>
                     </li>
+                    <li><a class="page-scroll" href="#team">Team</a></li>
                     <li>
                         <a class="page-scroll" href="#acronym">Acronym</a>
                     </li>
@@ -98,7 +100,7 @@
                     </span>
                     <h4 class="service-heading">
                     <button class="btn-primary btn" data-toggle="modal" data-target="#internet">Internet</button></h4>
-					<ul>
+					<ul class="modular">
                     <li>A global system of interconnected computer networks that use the standard Internet Protocol Suite (TCP/IP) to serce billions of users worldwide.</li>
 					</ul>
 				</div>
@@ -109,7 +111,7 @@
                     </span>
                     <h4 class="service-heading">
                     <button class="btn-primary btn" data-toggle="modal" data-target="#www">World Wide Web</button></h4>
-                    <ul>
+                    <ul class="modular">
 					<li>The World Wide Web (WWW) is combination of all resources and users on the Internet that are using the Hypertext Transfer Protocol (HTTP). </li> 
 					</ul>
 				</div>
@@ -120,7 +122,7 @@
                     </span>
                     <h4 class="service-heading">
                     <button class="btn-primary btn" data-toggle="modal" data-target="#http">Hypertext Transfer Protocol</button></h4>
-                    <ul>
+                    <ul class="modular">
 					<li> Application layer communication protocol used to access. </li> 
 					</ul>
 				</div>
@@ -143,7 +145,7 @@
                         <i class="fa fa-html5 fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading"><button class="btn-primary btn" data-toggle="modal" data-target="#html">HTML (HyperText Markup Language) </button></h4>
-                    <ul>
+                    <ul class="modular">
                       <li>The language for building and structure of the web pages. </li>
                     </ul>
                 </div>
@@ -154,7 +156,7 @@
                     </span>
                     <h4 class="service-heading">
                     <button class="btn-primary btn" data-toggle="modal" data-target="#css">CSS (Cascading Style Sheet)</button></h4>
-                    <ul>
+                    <ul class="modular">
                       <li>The language used to specify the presentation aspects (eg layout and formatting) of structurally marked up documents.</li>
                     </ul>
                 </div>
@@ -165,12 +167,13 @@
                     </span>
                     <h4 class="service-heading">
                         <button class="btn-primary btn" data-toggle="modal" data-target="#js">
-                        Java Script</h4>
-						<ul>
+							Java Script</button></h4>
+						<ul class="modular">
                     <li>The programming language of HTML and the Web.</li>
 					</ul>
                 </div>
         </div>
+		</div>
     </section>
 
     <!-- About Section -->
@@ -189,7 +192,9 @@
                     </span>
                     <h4 class="service-heading">
                     <button class="btn-primary btn" data-toggle="modal" data-target="#sss">Server-Side Scripting</button></h4>
-                    <li></li>
+					<ul class="modular">
+                        <li>Server-Side Scripting is a method of designing websites so that the process or user request is run on the originating server. Server-side scripts provide an interface to the user and are used to limit access to proprietary data and help keep control of the script source code.</li>
+					</ul>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -198,7 +203,12 @@
                     </span>
                     <h4 class="service-heading">
                     <button class="btn-primary btn" data-toggle="modal" data-target="#servlet">Java Servlets and JSP</button></h4>
-                    <li></li>
+					<ul class="modular">
+                        <li>Java Servlet is a Java programming language class that is used to extend the capabilities of servers that host applications accessed by means of a request-response programming model.</li>
+                    </ul>
+					<ul class="modular">
+                      <li>JSP is a technology for controlling the content or appearance of Web pages through the use of servlets, small programs that are specified in the Web page and run on the Web server to modify the Web page before it is sent to the user who requested it</li>
+                    </ul>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -207,8 +217,11 @@
                     </span>
                     <h4 class="service-heading">
                     <button class="btn-primary btn" data-toggle="modal" data-target="#phpnodejs">PHP and NodeJS</button></h4>
-                    <li></li>
-                </div>
+                    <ul class="modular">
+					<li>PHP is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML</li>
+                    <li>Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.</li>
+					</ul>
+				</div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -216,7 +229,9 @@
                     </span>
                     <h4 class="service-heading">
                     <button class="btn-primary btn" data-toggle="modal" data-target="#security">Web Application Security</button></h4>
-                    <li></li>
+                    <ul class="modular">
+					<li>Web Application Security is a branch of Information Security that deals specifically with security of websites, web applications and web services.</li>
+					</ul>
                 </div>
             </div>
         </div>
@@ -237,8 +252,7 @@
                         <img src="img/team/christian.jpg" class="img-responsive img-circle" alt="">
                         <h4>Christian Lucky Lalas</h4>
                         <p class="text-muted">BSIT - 4</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        <ul class="list-inline social-buttons ">
                             </li>
                             <li><a href="https://www.facebook.com/chriistianlalas"><i class="fa fa-facebook"></i></a>
                             </li>
@@ -253,8 +267,6 @@
                         <h4>Heinrich Bangui</h4>
                         <p class="text-muted">BSIT - 3</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
                             <li><a href="https://www.facebook.com/heinrich.bangui"><i class="fa fa-facebook"></i></a>
                             </li>
                             <li><a href="https://plus.google.com/103611823219937381757"><i class="fa fa-google-plus-official"></i></a>
@@ -268,8 +280,7 @@
                         <h4>Amariz Joy N. Chu</h4>
                         <p class="text-muted">BSIT - 3</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="https://twitter.com/@amakimchu"><i class="fa fa-twitter"></i></a>
-                            </li>
+                            
                             <li><a href="https://www.facebook.com/amarizjoyngchu15"><i class="fa fa-facebook"></i></a>
                             </li>
                             <li><a href="https://plus.google.com/u/0/100741293764904415257"><i class="fa fa-google-plus-official"></i></a>
@@ -283,8 +294,6 @@
                         <h4>Lovelace Zennia Luisa Oliva</h4>
                         <p class="text-muted">BSIT - 4</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
                             <li><a href="https://www.facebook.com/lovelacezennialuisa.oliva"><i class="fa fa-facebook"></i></a>
                             </li>
                             <li><a href="https://plus.google.com/u/0/109946433175067071827"><i class="fa fa-google-plus-official"></i></a>
@@ -298,8 +307,6 @@
                         <h4>Kenneth Neil Macalanda</h4>
                         <p class="text-muted">BSIT - 4</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
                             <li><a href="https://web.facebook.com/kennethneil26"><i class="fa fa-facebook"></i></a>
                             </li>
                             <li><a href="https://plus.google.com/u/0/102338438097382489727"><i class="fa fa-google-plus-official"></i></a>
@@ -315,15 +322,17 @@
     <!-- ACRONYM Section -->
     <section id="acronym">
         <div class="container">
-            <div class="row">
+           <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Acronym</h2>
                 </div>
             </div>
              <div class="row" id="acronym">
-                <div>
-		<input type="text" class="form-control" id="myInput" style="color: black" onkeyup="filter()" placeholder="Type an acronym">
-                <ul>
+             <div>
+			
+			<input type="text" class="form-control" id="myInput" style="color: black" onkeyup="filter()" placeholder="Type an acronym">
+
+                <ul id ="myUL">
                     <li class="header"> A </li>
 			<li> API - Application Programming Interface </li>
                         <li> ARPANET - Advance Research Projects Agency Network</li>
@@ -443,13 +452,13 @@
                 </ul>
                 </div>
             </div>
-            </div>
+        </div>
     </section>
 
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-5>
 						<span class="copyright">Copyright &copy; CHALK 2017</span>
                 </div>  
             </div>
@@ -495,7 +504,7 @@
                        <span aria-hidden="true">&times;</span>
                        <span class="sr-only">Close</span>
                 </button>
-				<h4> Contents:</h4>
+				<h4>Contents:</h4>
 				<ul>WWW
 					<li>WWW Means</li>
 				</ul>
@@ -522,9 +531,18 @@
                        <span aria-hidden="true">&times;</span>
                        <span class="sr-only">Close</span>
                 </button>
-				<h4> Contents:</h4>
+				<h4>Contents:</h4>
 				<ul>HTTP
 					<li>HTTP Means</li>
+					<li>HTTP Version</li>
+					<li>HTTP Unsecure</li>
+					<li>HTTP Resource Addressing</li>
+					<li>Protocol</li>
+					<li>HTTP Response Message</li>
+					<li>HTTP Request Message</li>
+					<li>HTTP Request Methods</li>
+					<li>HTTP Message Headers</li>
+					<li>HTTP Status Codes</li>
 				</ul>
 				<a href="http.html">Link to HTTP Reviewer</a>
    			<div class="modal-footer">  
@@ -549,7 +567,7 @@
                        <span aria-hidden="true">&times;</span>
                        <span class="sr-only">Close</span>
                 </button>
-				<h4> Table Of Contents:</h4>
+				<h4>Contents:</h4>
 				<ul>HTML
 					<li>HTML Means</li>
 					<li>HTML Version</li>
@@ -581,7 +599,7 @@
                        <span aria-hidden="true">&times;</span>
                        <span class="sr-only">Close</span>
                 </button>
-				<h4> Table Of Contents:</h4>
+				<h4>Contents:</h4>
 				<ul>CSS
 					<li>CSS Means</li>
 					<li>CSS Version</li>
@@ -615,9 +633,29 @@
                        <span aria-hidden="true">&times;</span>
                        <span class="sr-only">Close</span>
                 </button>
-				<h4> Contents:</h4>
+				<h4>Contents:</h4>
 				<ul>JavaScript
 					<li>JavaScript Means</li>
+					<li>Basic Language Features</li>
+				</ul>
+				<ul>Client-side Java Script				
+					<li>Different types of Client-side Java Script</li>
+					<li>3 Kinds of putting the JavaScript</li>
+					<li>Kinds on how to put code on the script</li>
+					<li>Document Object Model</li>
+					<li>Constant</li>
+					<li>Datatype</li>
+					<li>Expression and Operators</li>
+					<li>Function</li>
+				</ul>
+				<ul>CSWS
+					<li>XHTML 1.0</li>
+					<li>WHATWG</li>
+					<li>Typical Structure of a Webpage</li>
+				</ul>
+				<ul>AJAX
+					<li>3 Main Request</li>
+					<li>3 important properties of the XMLHttpRequest Object</li>
 				</ul>
 				<a href="js.html">Link to JavaScript Reviewer</a>
    			<div class="modal-footer">  
@@ -642,9 +680,10 @@
                        <span aria-hidden="true">&times;</span>
                        <span class="sr-only">Close</span>
                 </button>
-				<h4> Contents:</h4>
+				<h4>Contents:</h4>
 				<ul>Server-side Scripting
 					<li>Server-side Scripting Means</li>
+					<li>Focusing on Java</li>
 				</ul>
 				<a href="ssws.html">Link to Server-side Scripting Reviewer</a>
    			<div class="modal-footer">  
@@ -669,12 +708,19 @@
                        <span aria-hidden="true">&times;</span>
                        <span class="sr-only">Close</span>
                 </button>
-				<h4> Contents:</h4>
+				<h4>Contents:</h4>
 				<ul>Java Servlets
 					<li>Servlets Means</li>
+					<li>Servlet Demo</li>
+					<li>Servlet Method</li>
+					<li>HTTPServletRequest</li>
+					<li>Request Dispatching</li>
+					<li>Divide and Conquer Strategy</li>
+					<li>Servlet Classes and Interfaces</li>
 				</ul>
 				<ul>JSP
 					<li>JSP Means</li>
+					<li>JSP, JSTL, EL Expression and Scriplet</li>
 				</ul>
 				<a href="Servlet.html">Link to Java Servlets and JSP Reviewer</a>
    			<div class="modal-footer">  
@@ -732,6 +778,8 @@
 				<h4> Contents:</h4>
 				<ul>Web Application Security
 					<li>Web Application Security Means</li>
+					<li>Category of Web Application Security</li>
+					<li>Security</li>
 				</ul>
 				<a href="security.html">Link to Web Application Security Reviewer</a>
    			<div class="modal-footer">  
@@ -764,6 +812,7 @@
 	
 	<!-- filter JavaScript -->
 	<script src="js/filter.js"></script>
+
 </body>
 
 </html>
